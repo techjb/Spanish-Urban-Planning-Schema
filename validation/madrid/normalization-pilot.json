@@ -1,0 +1,207 @@
+{
+  "source": "https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3/query",
+  "recordCount": 20,
+  "retrievedCount": 20,
+  "results": [
+    {
+      "plotId": "MADRID-UBOV-6",
+      "sourceFeatureId": "6",
+      "originalUse": "RESIDENCIAL VIVIENDA COLECTIVA  ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-7",
+      "sourceFeatureId": "7",
+      "originalUse": "DOTACIONAL DEPORTIVO PÚBLICO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-11",
+      "sourceFeatureId": "11",
+      "originalUse": "RESIDENCIAL VIVIENDA COLECTIVA  ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-29",
+      "sourceFeatureId": "29",
+      "originalUse": "DOTACIONAL DEPORTIVO PÚBLICO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-30",
+      "sourceFeatureId": "30",
+      "originalUse": "DOTACIONAL ZONAS VERDES BÁSICO  ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-32",
+      "sourceFeatureId": "32",
+      "originalUse": "RESIDENCIAL VIVIENDA   ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-33",
+      "sourceFeatureId": "33",
+      "originalUse": "DOTACIONAL VÍA PÚBLICA SECUNDARIA LOCAL ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-38",
+      "sourceFeatureId": "38",
+      "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-39",
+      "sourceFeatureId": "39",
+      "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-41",
+      "sourceFeatureId": "41",
+      "originalUse": "RESIDENCIAL VIVIENDA COLECTIVA LIBRE ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-42",
+      "sourceFeatureId": "42",
+      "originalUse": "DOTACIONAL EQUIPAMIENTO PÚBLICO BIENESTAR SOCIAL BÁSICO",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-59",
+      "sourceFeatureId": "59",
+      "originalUse": "DOTACIONAL EQUIPAMIENTO PÚBLICO BIENESTAR SOCIAL BÁSICO",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-60",
+      "sourceFeatureId": "60",
+      "originalUse": "DOTACIONAL EQUIPAMIENTO PÚBLICO BIENESTAR SOCIAL BÁSICO",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-62",
+      "sourceFeatureId": "62",
+      "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-63",
+      "sourceFeatureId": "63",
+      "originalUse": "RESIDENCIAL VIVIENDA COLECTIVA LIBRE ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-64",
+      "sourceFeatureId": "64",
+      "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-93",
+      "sourceFeatureId": "93",
+      "originalUse": "SERVICIOS TERCIARIOS    ",
+      "originalZone": "",
+      "proposedUse": "UNKNOWN",
+      "mappingStatus": "REQUIRES_REVIEW",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-96",
+      "sourceFeatureId": "96",
+      "originalUse": "DOTACIONAL VÍA PÚBLICA SECUNDARIA LOCAL ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-97",
+      "sourceFeatureId": "97",
+      "originalUse": "DOTACIONAL ZONAS VERDES BÁSICO  ",
+      "originalZone": "",
+      "proposedUse": "FACILITIES",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    },
+    {
+      "plotId": "MADRID-UBOV-98",
+      "sourceFeatureId": "98",
+      "originalUse": "RESIDENCIAL VIVIENDA UNIFAMILIAR  ",
+      "originalZone": "",
+      "proposedUse": "RESIDENTIAL",
+      "mappingStatus": "PROPOSED",
+      "classification": "UNKNOWN",
+      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+    }
+  ]
+}
