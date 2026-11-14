@@ -1051,6 +1051,27 @@
       "group": "resolved",
       "scope": "plot",
       "unit": null
+    },
+    {
+      "id": "minSubdivisionPlotAreaM2",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima para segregación o parcelación de nuevas parcelas"
+    },
+    {
+      "id": "minSubdivisionFrontageM",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m",
+      "descriptionEs": "Longitud mínima de fachada para nuevas parcelaciones"
+    },
+    {
+      "id": "maxGroundFloorOccupancyPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de ocupación en planta baja"
     }
   ]
 }
