@@ -45,7 +45,8 @@ def main():
             "schemaVersion": "1.0",
             "plotId": "MADRID-UBOV-" + str(identifier),
             "parameters": {},
-            "calculationStatus": "UNKNOWN",\n            "source": {"dataset": "Ayuntamiento de Madrid ArcGIS USOS_SUELO layer 3", "featureId": str(identifier)},
+            "calculationStatus": "UNKNOWN",
+            "source": {"dataset": "Ayuntamiento de Madrid ArcGIS USOS_SUELO layer 3", "featureId": str(identifier)},
         }
         # The municipality's attributes do not independently prove legal
         # buildability, setbacks, occupancy or height. Do not invent them.
