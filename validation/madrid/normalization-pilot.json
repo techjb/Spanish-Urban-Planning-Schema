@@ -11,7 +11,9 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "MULTIFAMILY",
+      "mappingId": "MADRID-USE-001"
     },
     {
       "plotId": "MADRID-UBOV-7",
@@ -21,7 +23,9 @@
       "proposedUse": "FACILITIES",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SPORTS",
+      "mappingId": "MADRID-USE-002"
     },
     {
       "plotId": "MADRID-UBOV-11",
@@ -31,7 +35,9 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "MULTIFAMILY",
+      "mappingId": "MADRID-USE-001"
     },
     {
       "plotId": "MADRID-UBOV-29",
@@ -41,17 +47,21 @@
       "proposedUse": "FACILITIES",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SPORTS",
+      "mappingId": "MADRID-USE-002"
     },
     {
       "plotId": "MADRID-UBOV-30",
       "sourceFeatureId": "30",
       "originalUse": "DOTACIONAL ZONAS VERDES BÁSICO  ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-003"
     },
     {
       "plotId": "MADRID-UBOV-32",
@@ -61,37 +71,45 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-004"
     },
     {
       "plotId": "MADRID-UBOV-33",
       "sourceFeatureId": "33",
       "originalUse": "DOTACIONAL VÍA PÚBLICA SECUNDARIA LOCAL ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "INFRASTRUCTURE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "TRANSPORT",
+      "mappingId": "MADRID-USE-005"
     },
     {
       "plotId": "MADRID-UBOV-38",
       "sourceFeatureId": "38",
       "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-006"
     },
     {
       "plotId": "MADRID-UBOV-39",
       "sourceFeatureId": "39",
       "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-006"
     },
     {
       "plotId": "MADRID-UBOV-41",
@@ -101,7 +119,9 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "MULTIFAMILY",
+      "mappingId": "MADRID-USE-007"
     },
     {
       "plotId": "MADRID-UBOV-42",
@@ -111,7 +131,9 @@
       "proposedUse": "FACILITIES",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SOCIAL",
+      "mappingId": "MADRID-USE-008"
     },
     {
       "plotId": "MADRID-UBOV-59",
@@ -121,7 +143,9 @@
       "proposedUse": "FACILITIES",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SOCIAL",
+      "mappingId": "MADRID-USE-008"
     },
     {
       "plotId": "MADRID-UBOV-60",
@@ -131,17 +155,21 @@
       "proposedUse": "FACILITIES",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SOCIAL",
+      "mappingId": "MADRID-USE-008"
     },
     {
       "plotId": "MADRID-UBOV-62",
       "sourceFeatureId": "62",
       "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-006"
     },
     {
       "plotId": "MADRID-UBOV-63",
@@ -151,47 +179,57 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "MULTIFAMILY",
+      "mappingId": "MADRID-USE-007"
     },
     {
       "plotId": "MADRID-UBOV-64",
       "sourceFeatureId": "64",
       "originalUse": "DOTACIONAL ZONAS VERDES BARRIO BÁSICO ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-006"
     },
     {
       "plotId": "MADRID-UBOV-93",
       "sourceFeatureId": "93",
       "originalUse": "SERVICIOS TERCIARIOS    ",
       "originalZone": "",
-      "proposedUse": "UNKNOWN",
-      "mappingStatus": "REQUIRES_REVIEW",
+      "proposedUse": "TERTIARY",
+      "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-009"
     },
     {
       "plotId": "MADRID-UBOV-96",
       "sourceFeatureId": "96",
       "originalUse": "DOTACIONAL VÍA PÚBLICA SECUNDARIA LOCAL ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "INFRASTRUCTURE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "TRANSPORT",
+      "mappingId": "MADRID-USE-005"
     },
     {
       "plotId": "MADRID-UBOV-97",
       "sourceFeatureId": "97",
       "originalUse": "DOTACIONAL ZONAS VERDES BÁSICO  ",
       "originalZone": "",
-      "proposedUse": "FACILITIES",
+      "proposedUse": "GREEN_SPACE",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "OTHER",
+      "mappingId": "MADRID-USE-003"
     },
     {
       "plotId": "MADRID-UBOV-98",
@@ -201,7 +239,9 @@
       "proposedUse": "RESIDENTIAL",
       "mappingStatus": "PROPOSED",
       "classification": "UNKNOWN",
-      "notes": "La capa de usos no demuestra clasificación del suelo; propuesta léxica pendiente de revisión."
+      "notes": "Propuesta por etiqueta; pendiente de revisión normativa. No acredita clasificación del suelo.",
+      "proposedSubtype": "SINGLE_FAMILY",
+      "mappingId": "MADRID-USE-010"
     }
   ]
 }
