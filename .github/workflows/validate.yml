@@ -11,3 +11,4 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: python tests/validate.py
       - run: python tests/validate_municipalities.py
+      - run: python tests/validate_filters.py
