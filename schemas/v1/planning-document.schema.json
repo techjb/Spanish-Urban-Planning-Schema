@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPS Planning Document",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "documentId",
+    "name"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "municipalityCode": {
+      "type": "string"
+    },
+    "instrumentType": {
+      "type": "string"
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date"
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}
