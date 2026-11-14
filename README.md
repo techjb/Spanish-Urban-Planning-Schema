@@ -18,7 +18,7 @@ The [parameter catalogue](vocabularies/parameters.json) defines **178 identifier
 ## Structure
 
 - [schemas/v1](schemas/v1): six JSON Schema Draft 2020-12 schemas
-- [vocabularies](vocabularies): parameter identifiers and status vocabulary
+- [vocabularies](vocabularies): parameter identifiers, normalized [land classifications](vocabularies/land-classifications.json), hierarchical [land uses](vocabularies/land-uses.json), and status vocabulary
 - [examples](examples): fixed and conditional ordinances and an illustrative urban-planning plot
 - [docs/model.md](docs/model.md): model overview
 - [tests/validate.py](tests/validate.py): example validation
@@ -31,6 +31,7 @@ pip install -r requirements-dev.txt
 python tests/validate.py
 python tests/validate_municipalities.py
 python tests/validate_filters.py
+python tests/validate_vocabularies.py
 ```
 
 ## Principles
@@ -53,3 +54,7 @@ MIT. See [LICENSE](LICENSE).
 ## Goolzoom Suelo search attributes
 
 Search-ready attributes include `parameters.effectiveBuildabilityRatio`, `parameters.effectiveBuildableAreaM2`, `parameterEvidence`, `allowedUses`, and `landClassification`. Only resolved/verified values should be presented as confirmed; estimated or unknown values must remain distinguishable. Use a materialized indexed search table for high-volume filtering. A planning parcel is not necessarily a cadastral parcel, and multiple classifications can overlap an analysis unit. See [search model](docs/search-filters.md).
+
+## Municipal normalization
+
+Normalize distinct source codes per municipality, layer and version before assigning map colors. Keep original codes, legal terminology, provenance and review status. See [municipal normalization](docs/municipal-normalization.md) and the [fictional mapping example](examples/municipal-mappings.json). Zone characteristic use is distinct from legally permitted plot uses.
