@@ -15,7 +15,7 @@ def load_schema(name):
     return Draft202012Validator(schema, format_checker=FormatChecker())
 
 schemas = {name: load_schema(name) for name in
-           ("regulation", "plot", "planning-document", "zoning-area", "regulation-source")}
+           ("regulation", "cadastral-plot", "urban-planning-plot", "planning-document", "zoning-area", "regulation-source")}
 
 def expected_type(key, meta):
     if key.endswith(("Pct", "Ratio", "M", "M2", "M3", "Deg", "Ha")) or key.startswith(("minParkingSpacesPer", "minTreesPer")):
@@ -53,7 +53,7 @@ def validate_regulation(data):
 
 for name, example in [("regulation", "simple-regulation"),
                       ("regulation", "conditional-regulation"),
-                      ("plot", "resolved-plot")]:
+                      ("urban-planning-plot", "resolved-plot")]:
     data = json.loads((ROOT / "examples" / f"{example}.json").read_text())
     if name == "regulation":
         validate_regulation(data)
