@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPS Regulation Source",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "documentId"
+  ],
+  "properties": {
+    "sourceId": {
+      "type": "string"
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "article": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "originalText": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}
