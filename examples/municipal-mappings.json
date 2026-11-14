@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-draft",
+  "description": "Ejemplo ficticio, no equivalencias oficiales",
+  "municipalityCode": "00000",
+  "sourceDataset": "DEMO-PLANEAMIENTO",
+  "sourceLayer": "DEMO-CALIFICACION",
+  "sourceVersion": "2026-01",
+  "mappings": [
+    {
+      "mappingId": "DEMO-1",
+      "domain": "CHARACTERISTIC_USE",
+      "originalCode": "R-C",
+      "originalLabel": "Residencial colectivo",
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "status": "PROPOSED",
+      "sourceDocumentId": "DEMO-PGOU"
+    },
+    {
+      "mappingId": "DEMO-2",
+      "domain": "LAND_CLASSIFICATION",
+      "originalCode": "SUC",
+      "originalLabel": "Suelo urbano consolidado",
+      "normalizedClass": "URBAN",
+      "normalizedCategory": "CONSOLIDATED",
+      "status": "PROPOSED",
+      "sourceDocumentId": "DEMO-PGOU"
+    }
+  ]
+}
