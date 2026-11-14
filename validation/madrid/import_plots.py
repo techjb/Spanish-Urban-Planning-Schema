@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch real Madrid urban-planning plots and build conservative SUPS Plot fixtures.
+"""Fetch real Madrid urban-planning plots and build conservative SUPS Urban Planning Plot fixtures.
 
 Usage: python validation/madrid/import_plots.py --limit 20
 Requires: pip install requests jsonschema
@@ -33,7 +33,7 @@ def main():
     source = response.json()
     if source.get("type") != "FeatureCollection" or not source.get("features"):
         raise ValueError("No GeoJSON features returned; source was not usable")
-    schema = json.loads((ROOT / "schemas/v1/plot.schema.json").read_text())
+    schema = json.loads((ROOT / "schemas/v1/urban-planning-plot.schema.json").read_text())
     validator = Draft202012Validator(schema)
     plots = []
     for feature in source["features"]:
@@ -45,7 +45,7 @@ def main():
             "schemaVersion": "1.0",
             "plotId": "MADRID-UBOV-" + str(identifier),
             "parameters": {},
-            "calculationStatus": "UNKNOWN",
+            "calculationStatus": "UNKNOWN",\n            "source": {"dataset": "Ayuntamiento de Madrid ArcGIS USOS_SUELO layer 3", "featureId": str(identifier)},
         }
         # The municipality's attributes do not independently prove legal
         # buildability, setbacks, occupancy or height. Do not invent them.
@@ -53,7 +53,7 @@ def main():
         plots.append(plot)
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "source.geojson").write_text(json.dumps(source, ensure_ascii=False, indent=2), encoding="utf-8")
-    (args.output / "sups-plots.json").write_text(json.dumps(plots, ensure_ascii=False, indent=2), encoding="utf-8")
+    (args.output / "sups-urban-planning-plots.json").write_text(json.dumps(plots, ensure_ascii=False, indent=2), encoding="utf-8")
     (args.output / "manifest.json").write_text(json.dumps({
         "source_url": response.url,
         "count": len(plots),
