@@ -16,3 +16,5 @@ Conditions in natural language are not executable; absence of a parameter never 
 ## Search results
 
 Urban Planning Plot now supports `analysisUnit`, `parameterEvidence`, `allowedUses`, `landClassification` and `landClassificationOverlays`. Zoning Area supports `areaType` and classification metadata. These optional extensions describe results for querying, not legal authorization. See [search filters](search-filters.md).
+
+Cadastral Plot also includes `cadastralNature` (URBAN, RUSTIC, MIXED, UNKNOWN) and `officialBuiltAreaM2`. Cadastral nature is **not** planning land classification; existing built area is **not** permitted or remaining buildability. See `examples/cadastral-plot.json` for fictional sample values.
