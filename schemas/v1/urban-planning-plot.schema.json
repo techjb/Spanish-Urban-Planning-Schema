@@ -309,6 +309,11 @@
                 "format": "date-time"
               }
             }
+          },
+          "subtype": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Subtipo del vocabulario land-uses.json; no sustituye a la verificación normativa."
           }
         }
       }
@@ -385,6 +390,17 @@
           "format": "date"
         },
         "notes": {
+          "type": "string"
+        },
+        "mappingStatus": {
+          "enum": [
+            "VERIFIED",
+            "PROPOSED",
+            "REQUIRES_REVIEW",
+            "UNKNOWN"
+          ]
+        },
+        "originalCode": {
           "type": "string"
         }
       }
