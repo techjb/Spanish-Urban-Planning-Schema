@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0",
+  "regulationId": "ZARAGOZA-A6-G1",
+  "municipalityCode": "50297",
+  "name": "Zona A-6, grado 1: Malpica y Cogullada",
+  "planningDocumentId": "ZARAGOZA-PGOU-TR2024",
+  "parameters": {
+    "zoningCode": {
+      "status": "FIXED",
+      "value": "A-6 grado 1",
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "primaryUse": {
+      "status": "FIXED",
+      "value": "productive_industrial",
+      "sourceIds": [
+        "4.2.17"
+      ]
+    },
+    "minSubdivisionPlotAreaM2": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Manzana tipo A",
+          "value": 500
+        },
+        {
+          "condition": "Manzana tipo B",
+          "value": 3000
+        },
+        {
+          "condition": "Manzana tipo C",
+          "value": 1000
+        },
+        {
+          "condition": "Manzana tipo D",
+          "value": 6000
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "minSubdivisionFrontageM": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Manzana tipo A",
+          "value": 10
+        },
+        {
+          "condition": "Manzana tipo B",
+          "value": 30
+        },
+        {
+          "condition": "Manzana tipo C",
+          "value": 15
+        },
+        {
+          "condition": "Manzana tipo D",
+          "value": 50
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "minInscribedCircleM": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Manzana tipo A",
+          "value": 10
+        },
+        {
+          "condition": "Manzana tipo B",
+          "value": 30
+        },
+        {
+          "condition": "Manzana tipo C",
+          "value": 15
+        },
+        {
+          "condition": "Manzana tipo D",
+          "value": 50
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "minFrontSetbackM": {
+      "status": "FIXED",
+      "value": 5,
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "minRearSetbackM": {
+      "status": "FIXED",
+      "value": 5,
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "minSideSetbackM": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Manzana A, lindero medianero interior",
+          "value": 0
+        },
+        {
+          "condition": "Manzana A, lindero exterior de agrupación",
+          "value": 3
+        },
+        {
+          "condition": "Resto de manzanas",
+          "value": 3
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "maxBuildabilityRatio": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Regla general",
+          "value": 1.5
+        },
+        {
+          "condition": "A6*, A6** o A6***, con autorización municipal y compensación",
+          "value": 2.25
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "maxHeightM": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Nave industrial convencional",
+          "value": 10.5
+        },
+        {
+          "condition": "Otros edificios productivos admitidos",
+          "value": 13
+        },
+        {
+          "condition": "Otros edificios productivos en A6*, A6**, A6*** y condiciones de distancia",
+          "value": 21
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    },
+    "maxFloors": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Edificio representativo industrial convencional",
+          "value": 3
+        },
+        {
+          "condition": "Otros edificios productivos admitidos",
+          "value": 3
+        },
+        {
+          "condition": "Otros edificios productivos en A6*, A6**, A6*** y condiciones de distancia",
+          "value": 5
+        }
+      ],
+      "sourceIds": [
+        "4.2.20"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "documentId": "ZARAGOZA-PGOU-TR2024",
+      "article": "4.2.20",
+      "url": "https://www.zaragoza.es/contenidos/urbanismo/pgouz/TR2024/Normas_refundido_2025_con.pdf"
+    }
+  ]
+}
