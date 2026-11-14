@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0",
+  "regulationId": "ZARAGOZA-A1-G1",
+  "municipalityCode": "50297",
+  "name": "Zona A-1, grado 1: manzana cerrada",
+  "planningDocumentId": "ZARAGOZA-PGOU-TR2024",
+  "parameters": {
+    "zoningCode": {
+      "status": "FIXED",
+      "value": "A-1 grado 1",
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "minSubdivisionPlotAreaM2": {
+      "status": "FIXED",
+      "value": 150,
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "minSubdivisionFrontageM": {
+      "status": "FIXED",
+      "value": 10,
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "maxGroundFloorOccupancyPct": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Planta baja o inferior, salvo limitación gráfica",
+          "value": 100
+        }
+      ],
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "maxFloors": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Calle < 10 m; salvo altura gráfica distinta",
+          "value": 3
+        },
+        {
+          "condition": "Calle >=10 y <12 m; salvo altura gráfica distinta",
+          "value": 4
+        },
+        {
+          "condition": "Calle >=12 y <15 m; salvo altura gráfica distinta",
+          "value": 5
+        },
+        {
+          "condition": "Calle >=15 y <18 m; salvo altura gráfica distinta",
+          "value": 6
+        },
+        {
+          "condition": "Calle >=18 y <20 m; salvo altura gráfica distinta",
+          "value": 7
+        },
+        {
+          "condition": "Calle >=20 m; salvo altura gráfica distinta",
+          "value": 8
+        }
+      ],
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "maxHeightM": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Calle < 10 m; salvo altura gráfica distinta",
+          "value": 11
+        },
+        {
+          "condition": "Calle >=10 y <12 m; salvo altura gráfica distinta",
+          "value": 15
+        },
+        {
+          "condition": "Calle >=12 y <15 m; salvo altura gráfica distinta",
+          "value": 18.2
+        },
+        {
+          "condition": "Calle >=15 y <18 m; salvo altura gráfica distinta",
+          "value": 21.5
+        },
+        {
+          "condition": "Calle >=18 y <20 m; salvo altura gráfica distinta",
+          "value": 24.8
+        },
+        {
+          "condition": "Calle >=20 m; salvo altura gráfica distinta",
+          "value": 28.1
+        }
+      ],
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "maxBuildabilityRatio": {
+      "status": "UNKNOWN",
+      "originalText": "La edificabilidad resulta de fondos y alturas establecidos, descontando patios; no existe índice fijo general.",
+      "sourceIds": [
+        "4.1.8"
+      ]
+    },
+    "primaryUse": {
+      "status": "FIXED",
+      "value": "residential",
+      "sourceIds": [
+        "4.1.9"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "documentId": "ZARAGOZA-PGOU-TR2024",
+      "article": "4.1.8",
+      "url": "https://www.zaragoza.es/contenidos/urbanismo/pgouz/TR2024/Normas_refundido_2025_con.pdf"
+    }
+  ]
+}
