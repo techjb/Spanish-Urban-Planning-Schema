@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPS Urban Planning Plot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "plotId",
+    "parameters",
+    "calculationStatus"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0",
+      "description": "Versión del esquema SUPS utilizada para interpretar este objeto."
+    },
+    "plotId": {
+      "type": "string",
+      "description": "Identificador estable de la parcela urbanística dentro de la fuente de planeamiento."
+    },
+    "regulationRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "regulationId"
+        ],
+        "properties": {
+          "regulationId": {
+            "type": "string",
+            "description": "Identificador estable y único de la ordenanza o regla urbanística normalizada."
+          },
+          "version": {
+            "type": "string",
+            "description": "Versión de la ordenanza utilizada para el cálculo."
+          }
+        }
+      },
+      "description": "Ordenanzas utilizadas para resolver los parámetros de la parcela."
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "string",
+          "boolean",
+          "array",
+          "object",
+          "null"
+        ]
+      },
+      "description": "Diccionario de parámetros SUPS, identificados por su clave normalizada del catálogo."
+    },
+    "calculationStatus": {
+      "enum": [
+        "RESOLVED",
+        "PARTIAL",
+        "UNKNOWN",
+        "REQUIRES_REVIEW"
+      ],
+      "description": "Estado global de resolución: RESOLVED, PARTIAL, UNKNOWN o REQUIRES_REVIEW."
+    },
+    "calculatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Fecha y hora UTC u otra zona explícita, en formato ISO 8601, del cálculo."
+    },
+    "source": {
+      "type": "object",
+      "description": "Procedencia del identificador de parcela urbanística.",
+      "required": [
+        "dataset"
+      ],
+      "properties": {
+        "dataset": {
+          "type": "string"
+        },
+        "featureId": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+    "geometry": {
+      "type": "object",
+      "description": "Geometría GeoJSON opcional de la parcela urbanística.",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Polygon",
+            "MultiPolygon"
+          ]
+        },
+        "coordinates": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "cadastralReferences": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Referencias catastrales verificadas relacionadas espacialmente; no presupone equivalencia uno a uno."
+    }
+  },
+  "description": "Parcela urbanística identificada en fuente de planeamiento; no equivale necesariamente a parcela catastral ni a zona de ordenanza."
+}
