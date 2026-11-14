@@ -6,1072 +6,1247 @@
       "id": "landClass",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Clase urbanística del suelo (urbano, urbanizable, no urbanizable u otra categoría legal aplicable)."
     },
     {
       "id": "landCategory",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Categoría específica dentro de la clase de suelo, conforme a la legislación territorial aplicable."
     },
     {
       "id": "landStatus",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Situación jurídica o urbanística del suelo; no equivale necesariamente a su clase."
     },
     {
       "id": "urbanizationStatus",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Estado de ejecución de las obras de urbanización exigibles."
     },
     {
       "id": "developmentRequired",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se requiere una actuación de desarrollo urbanístico antes de edificar."
     },
     {
       "id": "directLicenseEligible",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si puede tramitarse licencia directamente sin instrumento previo de desarrollo, sujeto a otras condiciones."
     },
     {
       "id": "planningSystem",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Sistema de ordenación o planeamiento aplicable a la actuación."
     },
     {
       "id": "planningAreaCode",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Código oficial del ámbito de planeamiento."
     },
     {
       "id": "planningAreaType",
       "group": "classification",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Tipo de ámbito de planeamiento (sector, unidad, área, etc.)."
     },
     {
       "id": "zoningCode",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Código de zona u ordenanza asignado por el instrumento de planeamiento."
     },
     {
       "id": "zoningCategory",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Categoría o denominación de la zona urbanística."
     },
     {
       "id": "primaryUse",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Uso característico o principal de la zona o edificación."
     },
     {
       "id": "permittedUses",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Conjunto de usos expresamente admitidos por la ordenanza."
     },
     {
       "id": "compatibleUses",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Usos complementarios o compatibles con el principal, sujetos a condiciones."
     },
     {
       "id": "prohibitedUses",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Usos expresamente prohibidos."
     },
     {
       "id": "alternativeUses",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Usos alternativos admitidos en sustitución del característico."
     },
     {
       "id": "useRestrictions",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Limitaciones específicas de uso, incluidos requisitos y excepciones."
     },
     {
       "id": "useByFloor",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Usos permitidos o restringidos según la planta del edificio."
     },
     {
       "id": "useByBuildingType",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Usos admitidos según la tipología edificatoria."
     },
     {
       "id": "maxUsePercentage",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Porcentaje máximo de superficie o intensidad destinado a un uso; debe indicarse la base de cálculo."
     },
     {
       "id": "minUsePercentage",
       "group": "uses",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Porcentaje mínimo de superficie o intensidad destinado a un uso; debe indicarse la base de cálculo."
     },
     {
       "id": "protectedHousingRequiredPct",
       "group": "uses",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje exigido de vivienda sometida a algún régimen de protección; debe documentarse la base de cálculo."
     },
     {
       "id": "minPlotAreaM2",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima de parcela edificable, distinta del mínimo exigido para nuevas parcelaciones."
     },
     {
       "id": "maxPlotAreaM2",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie máxima de parcela admitida para la actuación regulada."
     },
     {
       "id": "minPlotFrontageM",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Longitud mínima de fachada de la parcela a vial u otro frente definido; no confundir con el requisito de segregación."
     },
     {
       "id": "minPlotDepthM",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Fondo mínimo exigido a la parcela."
     },
     {
       "id": "minInscribedCircleM",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Diámetro mínimo del círculo que debe poder inscribirse en la parcela."
     },
     {
       "id": "minPlotWidthM",
       "group": "plot",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Anchura mínima de parcela conforme al método de medición de la norma."
     },
     {
       "id": "minPlotAspectRatio",
       "group": "plot",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Relación mínima entre dimensiones de parcela; debe documentarse el orden del cociente."
     },
     {
       "id": "minPlotSlopePct",
       "group": "plot",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Pendiente mínima de la parcela cuando la ordenanza impone este requisito."
     },
     {
       "id": "maxPlotSlopePct",
       "group": "plot",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Pendiente máxima de parcela admitida para la actuación."
     },
     {
       "id": "plotSubdivisionAllowed",
       "group": "plot",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite dividir una finca en parcelas independientes."
     },
     {
       "id": "plotAggregationRequired",
       "group": "plot",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si es obligatorio agrupar parcelas para poder desarrollar la actuación."
     },
     {
       "id": "existingPlotException",
       "group": "plot",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Excepción aplicable a parcelas preexistentes que no cumplen los mínimos generales."
     },
     {
       "id": "maxBuildabilityRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice máximo de edificabilidad; superficie edificable computable dividida por superficie de suelo definida por la norma."
     },
     {
       "id": "minBuildabilityRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice mínimo de edificabilidad exigible, con la base de suelo que establezca la norma."
     },
     {
       "id": "maxBuildableAreaM2",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie edificable computable máxima en metros cuadrados; no equivale necesariamente a superficie construida."
     },
     {
       "id": "maxResidentialBuildabilityRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice máximo de edificabilidad destinado a uso residencial."
     },
     {
       "id": "maxCommercialBuildabilityRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice máximo de edificabilidad destinado a uso comercial."
     },
     {
       "id": "maxIndustrialBuildabilityRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice máximo de edificabilidad destinado a uso industrial."
     },
     {
       "id": "maxAboveGroundBuildableAreaM2",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie edificable computable máxima sobre rasante."
     },
     {
       "id": "maxBelowGroundBuildableAreaM2",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie edificable computable máxima bajo rasante."
     },
     {
       "id": "maxFloorAreaRatio",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Relación máxima entre superficie de plantas computables y superficie de suelo; distinguir del índice de edificabilidad si la norma usa otra base."
     },
     {
       "id": "buildabilityCalculationBasis",
       "group": "buildability",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Reglas de medición y superficie de referencia para calcular edificabilidad."
     },
     {
       "id": "nonComputableAreas",
       "group": "buildability",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Espacios o superficies que la ordenanza excluye del cómputo de edificabilidad."
     },
     {
       "id": "maxBuildingVolumeM3",
       "group": "buildability",
       "scope": "regulation",
-      "unit": "m3"
+      "unit": "m3",
+      "descriptionEs": "Volumen edificatorio máximo admitido en metros cúbicos."
     },
     {
       "id": "maxOccupancyPct",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de suelo ocupado por la edificación según la proyección y plantas definidas por la norma."
     },
     {
       "id": "maxAboveGroundOccupancyPct",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de ocupación por cuerpos de edificación sobre rasante."
     },
     {
       "id": "maxBelowGroundOccupancyPct",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de ocupación bajo rasante, incluidos sótanos cuando corresponda."
     },
     {
       "id": "maxOccupiedAreaM2",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie máxima de suelo ocupable por la edificación en metros cuadrados."
     },
     {
       "id": "minFreePlotAreaPct",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje mínimo de parcela que debe quedar libre de ocupación edificatoria."
     },
     {
       "id": "maxAuxiliaryOccupancyPct",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de ocupación atribuible a construcciones auxiliares."
     },
     {
       "id": "occupancyCalculationBasis",
       "group": "occupancy",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Criterios para medir ocupación: proyección, plantas incluidas, exclusiones y superficie de referencia."
     },
     {
       "id": "maxFloors",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de plantas permitidas según el criterio de cómputo de la ordenanza."
     },
     {
       "id": "minFloors",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de plantas exigido."
     },
     {
       "id": "maxHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima edificatoria en metros, medida desde la referencia definida por la ordenanza."
     },
     {
       "id": "maxTotalHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima total del edificio, incluidos los elementos que la norma haga computar."
     },
     {
       "id": "maxCorniceHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Cota o altura máxima de cornisa según la referencia de medición aplicable."
     },
     {
       "id": "maxRidgeHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima de cumbrera de la cubierta."
     },
     {
       "id": "maxBasementFloors",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de plantas de sótano admitidas."
     },
     {
       "id": "maxSemiBasementFloors",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de plantas semisótano admitidas."
     },
     {
       "id": "atticAllowed",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se admite una planta ático."
     },
     {
       "id": "setbackAtticRequired",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si el ático debe retranquearse respecto de la fachada."
     },
     {
       "id": "underRoofUseAllowed",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite ocupar o utilizar el espacio bajo cubierta."
     },
     {
       "id": "maxGroundFloorHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima de la planta baja."
     },
     {
       "id": "minFloorClearHeightM",
       "group": "height",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura libre interior mínima entre pavimento terminado y techo."
     },
     {
       "id": "heightMeasurementMethod",
       "group": "height",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Regla para medir la altura: origen, punto final, pendiente, fachadas y excepciones."
     },
     {
       "id": "minFrontSetbackM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Distancia mínima entre la edificación y el lindero frontal de parcela."
     },
     {
       "id": "minRearSetbackM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Distancia mínima entre la edificación y el lindero posterior."
     },
     {
       "id": "minSideSetbackM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Distancia mínima entre la edificación y los linderos laterales."
     },
     {
       "id": "minStreetSetbackM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Separación mínima de la edificación respecto de la alineación de vial."
     },
     {
       "id": "minBoundaryDistanceM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Distancia mínima a un lindero específico cuando no se distingue por frente, fondo o lateral."
     },
     {
       "id": "minBuildingSeparationM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Separación mínima entre edificios o cuerpos edificados."
     },
     {
       "id": "alignmentRequired",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si la fachada debe situarse sobre la alineación oficial."
     },
     {
       "id": "buildingLineCode",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Identificador de la línea de edificación o alineación aplicable."
     },
     {
       "id": "partyWallAllowed",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite edificar adosado a medianera."
     },
     {
       "id": "detachedBuildingRequired",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si la edificación debe quedar aislada de todos los linderos."
     },
     {
       "id": "maxProjectionM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Vuelo máximo de elementos salientes sobre fachada o alineación."
     },
     {
       "id": "maxBalconyProjectionM",
       "group": "setbacks",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Vuelo máximo permitido específicamente para balcones."
     },
     {
       "id": "maxBuildingDepthM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Fondo edificable máximo medido desde la alineación o referencia indicada."
     },
     {
       "id": "maxBuildingLengthM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Longitud máxima admitida para el cuerpo edificatorio."
     },
     {
       "id": "maxBuildingWidthM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Anchura máxima del volumen edificatorio."
     },
     {
       "id": "maxContinuousFacadeM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Longitud máxima de fachada continua sin interrupciones exigidas."
     },
     {
       "id": "maxBuildingFootprintM2",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie máxima de la huella horizontal del edificio."
     },
     {
       "id": "maxRoofSlopeDeg",
       "group": "volume",
       "scope": "regulation",
-      "unit": "degrees"
+      "unit": "degrees",
+      "descriptionEs": "Inclinación máxima de cubierta expresada en grados."
     },
     {
       "id": "minRoofSlopeDeg",
       "group": "volume",
       "scope": "regulation",
-      "unit": "degrees"
+      "unit": "degrees",
+      "descriptionEs": "Inclinación mínima de cubierta expresada en grados."
     },
     {
       "id": "maxRoofHeightM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima de la cubierta conforme a la referencia de medición normativa."
     },
     {
       "id": "buildingTypology",
       "group": "volume",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Configuración edificatoria admitida (aislada, pareada, entre medianeras, bloque, etc.)."
     },
     {
       "id": "courtyardRequired",
       "group": "volume",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si debe disponerse un patio interior o de luces."
     },
     {
       "id": "minCourtyardAreaM2",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima exigida al patio."
     },
     {
       "id": "minCourtyardWidthM",
       "group": "volume",
       "scope": "regulation",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Anchura o dimensión libre mínima del patio."
     },
     {
       "id": "maxDwellingCount",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de viviendas admitidas en el ámbito o parcela definido."
     },
     {
       "id": "minDwellingCount",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de viviendas exigido."
     },
     {
       "id": "maxDwellingDensityHa",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": "dwellings/ha",
+      "descriptionEs": "Densidad máxima de viviendas por hectárea; indicar si se calcula sobre suelo bruto o neto."
     },
     {
       "id": "minDwellingDensityHa",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": "dwellings/ha",
+      "descriptionEs": "Densidad mínima de viviendas por hectárea; indicar si se calcula sobre suelo bruto o neto."
     },
     {
       "id": "minAreaPerDwellingM2",
       "group": "housing",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie de suelo exigida por vivienda para la tipología aplicable; no equivale a superficie mínima total de parcela."
     },
     {
       "id": "minDwellingFloorAreaM2",
       "group": "housing",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima de cada vivienda según la superficie útil o construida que defina la norma."
     },
     {
       "id": "maxDwellingsPerBuilding",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de viviendas permitido en un edificio."
     },
     {
       "id": "residentialTypology",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Tipo de vivienda permitido: unifamiliar, plurifamiliar, colectiva u otro."
     },
     {
       "id": "housingProtectionType",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Modalidad o régimen de protección pública de la vivienda."
     },
     {
       "id": "housingSubdivisionAllowed",
       "group": "housing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si puede dividirse una vivienda existente en varias unidades."
     },
     {
       "id": "minParkingSpacesPerDwelling",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Número mínimo de plazas de aparcamiento exigidas por vivienda."
     },
     {
       "id": "minParkingSpacesPer100M2",
       "group": "parking",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "spaces/100m2",
+      "descriptionEs": "Número mínimo de plazas por cada 100 m² de superficie de referencia; unidad del valor: plazas/100 m²."
     },
     {
       "id": "minParkingSpacesTotal",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo total de plazas de aparcamiento."
     },
     {
       "id": "maxParkingSpacesTotal",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo total de plazas de aparcamiento."
     },
     {
       "id": "minAccessibleParkingSpaces",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de plazas reservadas para personas con movilidad reducida."
     },
     {
       "id": "minBicycleParkingSpaces",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de plazas para bicicletas."
     },
     {
       "id": "loadingAreaRequired",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se exige zona de carga y descarga."
     },
     {
       "id": "minLoadingSpaces",
       "group": "parking",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de puestos de carga y descarga."
     },
     {
       "id": "minPublicFacilityAreaM2",
       "group": "parking",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima de suelo destinada a dotaciones públicas."
     },
     {
       "id": "minPublicOpenSpaceAreaM2",
       "group": "parking",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie mínima destinada a espacios libres públicos."
     },
     {
       "id": "minPermeableAreaPct",
       "group": "environment",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje mínimo de superficie de suelo permeable."
     },
     {
       "id": "minGreenAreaPct",
       "group": "environment",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje mínimo de superficie destinada a zonas verdes."
     },
     {
       "id": "minTreeCount",
       "group": "environment",
       "scope": "regulation",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de árboles exigidos."
     },
     {
       "id": "minTreesPer100M2",
       "group": "environment",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "trees/100m2",
+      "descriptionEs": "Número mínimo de árboles por cada 100 m² de superficie de referencia; unidad: árboles/100 m²."
     },
     {
       "id": "maxImperviousAreaPct",
       "group": "environment",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de superficie impermeabilizada."
     },
     {
       "id": "landscapeIntegrationRequired",
       "group": "environment",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se exigen medidas de integración paisajística."
     },
     {
       "id": "treeProtectionRequired",
       "group": "environment",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si existen obligaciones de conservación o protección del arbolado."
     },
     {
       "id": "rainwaterManagementRequired",
       "group": "environment",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si deben implantarse medidas de gestión de aguas pluviales."
     },
     {
       "id": "minTerrainNaturalPct",
       "group": "environment",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje mínimo de terreno que debe conservarse en estado natural."
     },
     {
       "id": "heritageProtectionLevel",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Grado de protección patrimonial asignado al inmueble o ámbito."
     },
     {
       "id": "heritageCatalogCode",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Código de ficha en el catálogo de protección patrimonial."
     },
     {
       "id": "environmentalProtectionType",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Figura o régimen de protección ambiental aplicable."
     },
     {
       "id": "floodRiskZone",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Categoría o delimitación de riesgo de inundación que afecta al suelo."
     },
     {
       "id": "coastalProtectionZone",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Régimen de protección o servidumbre derivado de la legislación de costas."
     },
     {
       "id": "roadProtectionZone",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Zona de afección o protección de infraestructuras viarias."
     },
     {
       "id": "railwayProtectionZone",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Zona de afección o protección ferroviaria."
     },
     {
       "id": "aeronauticalRestriction",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Limitaciones derivadas de servidumbres aeronáuticas."
     },
     {
       "id": "utilityEasements",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Servidumbres de redes e infraestructuras de servicios que afectan a la parcela."
     },
     {
       "id": "archaeologicalProtectionLevel",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Grado de protección o cautela arqueológica."
     },
     {
       "id": "protectedBuildingElements",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Elementos concretos del edificio sujetos a conservación o protección."
     },
     {
       "id": "demolitionAllowed",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si está permitida la demolición, sujeta a condiciones patrimoniales y administrativas."
     },
     {
       "id": "newConstructionAllowed",
       "group": "protection",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se admite nueva edificación en el ámbito protegido."
     },
     {
       "id": "developmentPlanRequired",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si debe aprobarse planeamiento de desarrollo antes de ejecutar la actuación."
     },
     {
       "id": "urbanizationProjectRequired",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se exige proyecto de urbanización."
     },
     {
       "id": "reparcelingRequired",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se requiere reparcelación o equidistribución."
     },
     {
       "id": "urbanizationCompleted",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si las obras de urbanización exigibles están ejecutadas."
     },
     {
       "id": "managementSystem",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Sistema de ejecución o gestión urbanística aplicable."
     },
     {
       "id": "grossBuildabilityRatio",
       "group": "management",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice de edificabilidad calculado sobre superficie bruta del ámbito."
     },
     {
       "id": "netBuildabilityRatio",
       "group": "management",
       "scope": "regulation",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice de edificabilidad calculado sobre superficie neta de parcela o ámbito."
     },
     {
       "id": "averageDevelopmentRights",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Aprovechamiento medio del ámbito según la legislación urbanística aplicable."
     },
     {
       "id": "standardDevelopmentRights",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Aprovechamiento tipo o de referencia establecido por el planeamiento."
     },
     {
       "id": "publicLandTransferPct",
       "group": "management",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje de suelo de cesión obligatoria a la administración; indicar base de cálculo."
     },
     {
       "id": "publicDevelopmentRightsTransferPct",
       "group": "management",
       "scope": "regulation",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje de aprovechamiento urbanístico de cesión obligatoria."
     },
     {
       "id": "urbanizationCostEstimateM2",
       "group": "management",
       "scope": "regulation",
-      "unit": "m2"
+      "unit": "currency/m2",
+      "descriptionEs": "Coste estimado de urbanización por metro cuadrado de superficie de referencia; unidad monetaria por m², no m²."
     },
     {
       "id": "developmentDeadline",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Plazo o fecha límite para cumplir deberes de desarrollo urbanístico."
     },
     {
       "id": "executionUnitCode",
       "group": "management",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Código de la unidad de ejecución o actuación."
     },
     {
       "id": "existingBuildingStatus",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Situación administrativa o urbanística de la edificación existente."
     },
     {
       "id": "outOfPlanningStatus",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Situación de fuera de ordenación o asimilada conforme a la legislación aplicable."
     },
     {
       "id": "consolidatedBuildingRights",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Derechos edificatorios existentes o consolidados reconocidos por la norma."
     },
     {
       "id": "extensionAllowed",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite ampliar una construcción existente."
     },
     {
       "id": "rehabilitationAllowed",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite rehabilitar la edificación existente."
     },
     {
       "id": "reconstructionAllowed",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se permite reconstruir una edificación."
     },
     {
       "id": "changeOfUseAllowed",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si se admite el cambio de uso de una edificación existente."
     },
     {
       "id": "existingVolumePreservationRequired",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si debe conservarse el volumen existente."
     },
     {
       "id": "existingFacadePreservationRequired",
       "group": "existing",
       "scope": "regulation",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Indica si debe conservarse la fachada existente."
     },
     {
       "id": "plotAreaM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie de parcela utilizada en el análisis; indicar fuente y método de medición."
     },
     {
       "id": "netPlotAreaM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie neta de parcela después de deducir cesiones o afecciones aplicables."
     },
     {
       "id": "plotFrontageM",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Longitud efectiva de fachada de parcela a vial."
     },
     {
       "id": "plotDepthM",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Fondo efectivo de la parcela conforme a la referencia de medición."
     },
     {
       "id": "streetWidthM",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Anchura de la calle relevante para la ordenanza, medida según el criterio normativo."
     },
     {
       "id": "effectiveBuildabilityRatio",
       "group": "resolved",
       "scope": "plot",
-      "unit": "ratio"
+      "unit": "ratio",
+      "descriptionEs": "Índice de edificabilidad efectivo tras resolver las reglas y condiciones aplicables."
     },
     {
       "id": "effectiveMaxFloors",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Máximo de plantas efectivo aplicable a la parcela."
     },
     {
       "id": "effectiveMaxOccupancyPct",
       "group": "resolved",
       "scope": "plot",
-      "unit": "percent"
+      "unit": "percent",
+      "descriptionEs": "Porcentaje máximo de ocupación efectivo aplicable a la parcela."
     },
     {
       "id": "effectiveMaxHeightM",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m"
+      "unit": "m",
+      "descriptionEs": "Altura máxima efectiva aplicable a la parcela."
     },
     {
       "id": "effectiveBuildableAreaM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie edificable computable máxima resultante de aplicar las reglas a la parcela."
     },
     {
       "id": "effectiveBuildingFootprintM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Huella máxima de edificación resultante de ocupación, retranqueos y otras restricciones."
     },
     {
       "id": "effectiveMaxDwellingCount",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número máximo de viviendas resultante de aplicar densidades, tipologías y demás restricciones."
     },
     {
       "id": "effectiveMinParkingSpaces",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": "count",
+      "descriptionEs": "Número mínimo de plazas exigibles tras aplicar la normativa a la actuación."
     },
     {
       "id": "existingBuiltAreaM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie construida existente utilizada para el análisis; no necesariamente computa íntegramente como edificabilidad."
     },
     {
       "id": "remainingBuildableAreaM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Edificabilidad remanente: diferencia entre derecho edificatorio y superficie computable consumida, según norma."
     },
     {
       "id": "developmentPotentialM2",
       "group": "resolved",
       "scope": "plot",
-      "unit": "m2"
+      "unit": "m2",
+      "descriptionEs": "Superficie adicional potencialmente desarrollable según hipótesis explícitas; no implica licencia automática."
     },
     {
       "id": "buildableEnvelopeGeometry",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Geometría tridimensional o bidimensional del volumen envolvente permitido, con sistema de referencia documentado."
     },
     {
       "id": "calculationStatus",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Estado de resolución del cálculo: completo, parcial, desconocido o pendiente de revisión."
     },
     {
       "id": "calculatedAt",
       "group": "resolved",
       "scope": "plot",
-      "unit": null
+      "unit": null,
+      "descriptionEs": "Fecha y hora de ejecución del cálculo con zona horaria explícita."
     },
     {
       "id": "minSubdivisionPlotAreaM2",
       "group": "plot",
       "scope": "regulation",
       "unit": "m2",
-      "descriptionEs": "Superficie mínima para segregación o parcelación de nuevas parcelas"
+      "descriptionEs": "Superficie mínima exigida para cada parcela resultante de una nueva segregación o parcelación."
     },
     {
       "id": "minSubdivisionFrontageM",
       "group": "plot",
       "scope": "regulation",
       "unit": "m",
-      "descriptionEs": "Longitud mínima de fachada para nuevas parcelaciones"
+      "descriptionEs": "Longitud mínima de fachada exigida a cada parcela resultante de una nueva parcelación."
     },
     {
       "id": "maxGroundFloorOccupancyPct",
       "group": "occupancy",
       "scope": "regulation",
       "unit": "percent",
-      "descriptionEs": "Porcentaje máximo de ocupación en planta baja"
+      "descriptionEs": "Porcentaje máximo de ocupación de la planta baja respecto a la superficie de referencia establecida."
     }
   ]
 }
