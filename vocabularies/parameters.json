@@ -1,0 +1,1056 @@
+{
+  "schemaVersion": "1.0",
+  "status": "draft",
+  "parameters": [
+    {
+      "id": "landClass",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "landCategory",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "landStatus",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "urbanizationStatus",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "developmentRequired",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "directLicenseEligible",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "planningSystem",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "planningAreaCode",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "planningAreaType",
+      "group": "classification",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "zoningCode",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "zoningCategory",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "primaryUse",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "permittedUses",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "compatibleUses",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "prohibitedUses",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "alternativeUses",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "useRestrictions",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "useByFloor",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "useByBuildingType",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxUsePercentage",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minUsePercentage",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "protectedHousingRequiredPct",
+      "group": "uses",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "minPlotAreaM2",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxPlotAreaM2",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minPlotFrontageM",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minPlotDepthM",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minInscribedCircleM",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minPlotWidthM",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minPlotAspectRatio",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "minPlotSlopePct",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "maxPlotSlopePct",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "plotSubdivisionAllowed",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "plotAggregationRequired",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "existingPlotException",
+      "group": "plot",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxBuildabilityRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "minBuildabilityRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "maxBuildableAreaM2",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxResidentialBuildabilityRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "maxCommercialBuildabilityRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "maxIndustrialBuildabilityRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "maxAboveGroundBuildableAreaM2",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxBelowGroundBuildableAreaM2",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxFloorAreaRatio",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "buildabilityCalculationBasis",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "nonComputableAreas",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxBuildingVolumeM3",
+      "group": "buildability",
+      "scope": "regulation",
+      "unit": "m3"
+    },
+    {
+      "id": "maxOccupancyPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "maxAboveGroundOccupancyPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "maxBelowGroundOccupancyPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "maxOccupiedAreaM2",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minFreePlotAreaPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "maxAuxiliaryOccupancyPct",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "occupancyCalculationBasis",
+      "group": "occupancy",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxFloors",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minFloors",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxTotalHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxCorniceHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxRidgeHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBasementFloors",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxSemiBasementFloors",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "atticAllowed",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "setbackAtticRequired",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "underRoofUseAllowed",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxGroundFloorHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minFloorClearHeightM",
+      "group": "height",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "heightMeasurementMethod",
+      "group": "height",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minFrontSetbackM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minRearSetbackM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minSideSetbackM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minStreetSetbackM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minBoundaryDistanceM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "minBuildingSeparationM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "alignmentRequired",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "buildingLineCode",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "partyWallAllowed",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "detachedBuildingRequired",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxProjectionM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBalconyProjectionM",
+      "group": "setbacks",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBuildingDepthM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBuildingLengthM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBuildingWidthM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxContinuousFacadeM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxBuildingFootprintM2",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxRoofSlopeDeg",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "degrees"
+    },
+    {
+      "id": "minRoofSlopeDeg",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "degrees"
+    },
+    {
+      "id": "maxRoofHeightM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "buildingTypology",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "courtyardRequired",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minCourtyardAreaM2",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minCourtyardWidthM",
+      "group": "volume",
+      "scope": "regulation",
+      "unit": "m"
+    },
+    {
+      "id": "maxDwellingCount",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minDwellingCount",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxDwellingDensityHa",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minDwellingDensityHa",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minAreaPerDwellingM2",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minDwellingFloorAreaM2",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxDwellingsPerBuilding",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "residentialTypology",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "housingProtectionType",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "housingSubdivisionAllowed",
+      "group": "housing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minParkingSpacesPerDwelling",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minParkingSpacesPer100M2",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minParkingSpacesTotal",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "maxParkingSpacesTotal",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minAccessibleParkingSpaces",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minBicycleParkingSpaces",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "loadingAreaRequired",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minLoadingSpaces",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minPublicFacilityAreaM2",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minPublicOpenSpaceAreaM2",
+      "group": "parking",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "minPermeableAreaPct",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "minGreenAreaPct",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "minTreeCount",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minTreesPer100M2",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "maxImperviousAreaPct",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "landscapeIntegrationRequired",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "treeProtectionRequired",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "rainwaterManagementRequired",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "minTerrainNaturalPct",
+      "group": "environment",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "heritageProtectionLevel",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "heritageCatalogCode",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "environmentalProtectionType",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "floodRiskZone",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "coastalProtectionZone",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "roadProtectionZone",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "railwayProtectionZone",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "aeronauticalRestriction",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "utilityEasements",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "archaeologicalProtectionLevel",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "protectedBuildingElements",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "demolitionAllowed",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "newConstructionAllowed",
+      "group": "protection",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "developmentPlanRequired",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "urbanizationProjectRequired",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "reparcelingRequired",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "urbanizationCompleted",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "managementSystem",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "grossBuildabilityRatio",
+      "group": "management",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "netBuildabilityRatio",
+      "group": "management",
+      "scope": "regulation",
+      "unit": "ratio"
+    },
+    {
+      "id": "averageDevelopmentRights",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "standardDevelopmentRights",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "publicLandTransferPct",
+      "group": "management",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "publicDevelopmentRightsTransferPct",
+      "group": "management",
+      "scope": "regulation",
+      "unit": "percent"
+    },
+    {
+      "id": "urbanizationCostEstimateM2",
+      "group": "management",
+      "scope": "regulation",
+      "unit": "m2"
+    },
+    {
+      "id": "developmentDeadline",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "executionUnitCode",
+      "group": "management",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "existingBuildingStatus",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "outOfPlanningStatus",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "consolidatedBuildingRights",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "extensionAllowed",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "rehabilitationAllowed",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "reconstructionAllowed",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "changeOfUseAllowed",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "existingVolumePreservationRequired",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "existingFacadePreservationRequired",
+      "group": "existing",
+      "scope": "regulation",
+      "unit": null
+    },
+    {
+      "id": "plotAreaM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "netPlotAreaM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "plotFrontageM",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m"
+    },
+    {
+      "id": "plotDepthM",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m"
+    },
+    {
+      "id": "streetWidthM",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m"
+    },
+    {
+      "id": "effectiveBuildabilityRatio",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "ratio"
+    },
+    {
+      "id": "effectiveMaxFloors",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    },
+    {
+      "id": "effectiveMaxOccupancyPct",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "percent"
+    },
+    {
+      "id": "effectiveMaxHeightM",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m"
+    },
+    {
+      "id": "effectiveBuildableAreaM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "effectiveBuildingFootprintM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "effectiveMaxDwellingCount",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    },
+    {
+      "id": "effectiveMinParkingSpaces",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    },
+    {
+      "id": "existingBuiltAreaM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "remainingBuildableAreaM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "developmentPotentialM2",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": "m2"
+    },
+    {
+      "id": "buildableEnvelopeGeometry",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    },
+    {
+      "id": "calculationStatus",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    },
+    {
+      "id": "calculatedAt",
+      "group": "resolved",
+      "scope": "plot",
+      "unit": null
+    }
+  ]
+}
