@@ -10,33 +10,40 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0"
+      "const": "1.0",
+      "description": "Versión del esquema SUPS utilizada para interpretar este objeto."
     },
     "regulationId": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "Identificador estable y único de la ordenanza o regla urbanística normalizada."
     },
     "municipalityCode": {
       "type": "string",
-      "pattern": "^[0-9]{5}$"
+      "pattern": "^[0-9]{5}$",
+      "description": "Código INE de cinco dígitos del municipio al que se refiere el dato."
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "Denominación oficial o descriptiva del documento u ordenanza."
     },
     "planningDocumentId": {
-      "type": "string"
+      "type": "string",
+      "description": "Identificador del instrumento de planeamiento que contiene o respalda esta ordenanza."
     },
     "parameters": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/parameter"
-      }
+      },
+      "description": "Diccionario de parámetros SUPS, identificados por su clave normalizada del catálogo."
     },
     "sources": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/source"
-      }
+      },
+      "description": "Referencias documentales que respaldan la extracción de la ordenanza."
     }
   },
   "$defs": {
@@ -47,20 +54,25 @@
       ],
       "properties": {
         "documentId": {
-          "type": "string"
+          "type": "string",
+          "description": "Identificador del documento de planeamiento al que pertenece esta referencia."
         },
         "article": {
-          "type": "string"
+          "type": "string",
+          "description": "Artículo, apartado o sección exacta de la norma que respalda el dato."
         },
         "page": {
           "type": "integer",
-          "minimum": 1
+          "minimum": 1,
+          "description": "Número de página del documento original (comenzando en 1)."
         },
         "url": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Enlace público al documento o fragmento de origen."
         }
-      }
+      },
+      "description": "Referencia documental de origen."
     },
     "parameter": {
       "type": "object",
@@ -74,7 +86,8 @@
             "CONDITIONAL",
             "UNKNOWN",
             "NOT_APPLICABLE"
-          ]
+          ],
+          "description": "Estado de determinación: FIXED (valor directo), CONDITIONAL (depende de condiciones), UNKNOWN (no determinado) o NOT_APPLICABLE (no procede)."
         },
         "value": {
           "type": [
@@ -85,7 +98,8 @@
             "array",
             "object",
             "null"
-          ]
+          ],
+          "description": "Valor del parámetro; su unidad y significado dependen del identificador del catálogo SUPS."
         },
         "variants": {
           "type": "array",
@@ -97,25 +111,32 @@
             ],
             "properties": {
               "condition": {
-                "type": "string"
+                "type": "string",
+                "description": "Descripción textual de cuándo se aplica esta variante; no es una expresión ejecutable."
               },
-              "value": {}
+              "value": {
+                "description": "Valor del parámetro; su unidad y significado dependen del identificador del catálogo SUPS."
+              }
             }
-          }
+          },
+          "description": "Alternativas de valor condicionadas por tipología, situación o requisitos normativos."
         },
         "sourceIds": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Identificadores de las fuentes que justifican este parámetro; deben poder resolverse en la documentación asociada."
         },
         "originalText": {
-          "type": "string"
+          "type": "string",
+          "description": "Transcripción o fragmento relevante de la disposición original para auditoría y revisión."
         },
         "confidence": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Confianza de la extracción entre 0 y 1; no equivale a validez jurídica."
         }
       },
       "allOf": [
@@ -153,7 +174,9 @@
             ]
           }
         }
-      ]
+      ],
+      "description": "Parámetro individual con valor, estado y procedencia."
     }
-  }
+  },
+  "description": "Representación normalizada de determinaciones de una ordenanza urbanística, sin resolver necesariamente su aplicación a una parcela."
 }
