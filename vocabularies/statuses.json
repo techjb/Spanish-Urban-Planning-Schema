@@ -1,0 +1,14 @@
+{
+  "parameterStatuses": [
+    "FIXED",
+    "CONDITIONAL",
+    "UNKNOWN",
+    "NOT_APPLICABLE"
+  ],
+  "calculationStatuses": [
+    "RESOLVED",
+    "PARTIAL",
+    "UNKNOWN",
+    "REQUIRES_REVIEW"
+  ]
+}
