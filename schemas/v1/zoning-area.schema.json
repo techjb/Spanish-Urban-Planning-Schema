@@ -96,6 +96,70 @@
         "effectiveDate": {
           "type": "string",
           "format": "date"
+        },
+        "originalCode": {
+          "type": "string"
+        },
+        "mappingStatus": {
+          "enum": [
+            "VERIFIED",
+            "PROPOSED",
+            "REQUIRES_REVIEW",
+            "UNKNOWN"
+          ]
+        },
+        "mappingId": {
+          "type": "string"
+        }
+      }
+    },
+    "characteristicUse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "use"
+      ],
+      "description": "Uso característico normalizado del ámbito; no implica por sí mismo autorización de ese uso en cada parcela.",
+      "properties": {
+        "use": {
+          "enum": [
+            "RESIDENTIAL",
+            "COMMERCIAL",
+            "OFFICE",
+            "HOTEL",
+            "TERTIARY",
+            "INDUSTRIAL",
+            "LOGISTICS",
+            "FACILITIES",
+            "AGRICULTURAL",
+            "GREEN_SPACE",
+            "INFRASTRUCTURE",
+            "MIXED",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "subtype": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identificador de subtipo de vocabularies/land-uses.json, validado por el catálogo."
+        },
+        "originalCode": {
+          "type": "string"
+        },
+        "originalUse": {
+          "type": "string"
+        },
+        "mappingStatus": {
+          "enum": [
+            "VERIFIED",
+            "PROPOSED",
+            "REQUIRES_REVIEW",
+            "UNKNOWN"
+          ]
+        },
+        "mappingId": {
+          "type": "string"
         }
       }
     }
