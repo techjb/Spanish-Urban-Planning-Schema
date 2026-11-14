@@ -12,3 +12,7 @@ The `plotId` is an urban-planning-source identifier, not a cadastral reference. 
 Fixtures: Madrid has 20 urban-planning plots with unknown parameters; València, Barcelona and Bilbao have five cadastral parcels each with GIS-measured areas. These are source-data/structural validations, **not** certified effective building rights.
 
 Conditions in natural language are not executable; absence of a parameter never means unrestricted permission. SUPS is a community draft, not an official standard.
+
+## Search results
+
+Urban Planning Plot now supports `analysisUnit`, `parameterEvidence`, `allowedUses`, `landClassification` and `landClassificationOverlays`. Zoning Area supports `areaType` and classification metadata. These optional extensions describe results for querying, not legal authorization. See [search filters](search-filters.md).
