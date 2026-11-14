@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPS Cadastral Plot",
+  "description": "Parcela catastral y atributos de procedencia catastral, independientes de los derechos urbanísticos.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "cadastralReference",
+    "source"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0",
+      "description": "Versión SUPS."
+    },
+    "cadastralReference": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador catastral tal como figura en la fuente; puede variar en longitud y formato según territorio."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataset"
+      ],
+      "properties": {
+        "dataset": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Organismo o conjunto de datos catastral."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "officialAreaM2": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Superficie oficial declarada por el Catastro, solo cuando se haya obtenido expresamente."
+    },
+    "measuredAreaM2": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Superficie medida geométricamente; no debe confundirse con superficie catastral oficial ni superficie urbanística neta."
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "crs": {
+          "type": "string"
+        }
+      },
+      "description": "Método y CRS utilizados para obtener la superficie medida."
+    },
+    "cadastralUse": {
+      "type": "string",
+      "description": "Uso catastral, que no acredita por sí mismo un uso urbanístico permitido."
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Polygon",
+            "MultiPolygon"
+          ]
+        },
+        "coordinates": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "urbanPlanningPlotIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Vínculos verificados con parcelas urbanísticas; la relación puede ser muchos a muchos."
+    }
+  }
+}
