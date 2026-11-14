@@ -11,10 +11,12 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0"
+      "const": "1.0",
+      "description": "Versión del esquema SUPS utilizada para interpretar este objeto."
     },
     "plotId": {
-      "type": "string"
+      "type": "string",
+      "description": "Identificador único de la parcela o unidad urbanística objeto del cálculo; no necesariamente coincide con la referencia catastral."
     },
     "regulationRefs": {
       "type": "array",
@@ -25,13 +27,16 @@
         ],
         "properties": {
           "regulationId": {
-            "type": "string"
+            "type": "string",
+            "description": "Identificador estable y único de la ordenanza o regla urbanística normalizada."
           },
           "version": {
-            "type": "string"
+            "type": "string",
+            "description": "Versión de la ordenanza utilizada para el cálculo."
           }
         }
-      }
+      },
+      "description": "Ordenanzas utilizadas para resolver los parámetros de la parcela."
     },
     "parameters": {
       "type": "object",
@@ -44,7 +49,8 @@
           "object",
           "null"
         ]
-      }
+      },
+      "description": "Diccionario de parámetros SUPS, identificados por su clave normalizada del catálogo."
     },
     "calculationStatus": {
       "enum": [
@@ -52,11 +58,14 @@
         "PARTIAL",
         "UNKNOWN",
         "REQUIRES_REVIEW"
-      ]
+      ],
+      "description": "Estado global de resolución: RESOLVED, PARTIAL, UNKNOWN o REQUIRES_REVIEW."
     },
     "calculatedAt": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "description": "Fecha y hora UTC u otra zona explícita, en formato ISO 8601, del cálculo."
     }
-  }
+  },
+  "description": "Resultado de aplicar, total o parcialmente, normas urbanísticas a una parcela o unidad de análisis."
 }
