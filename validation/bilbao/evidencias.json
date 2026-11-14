@@ -1,0 +1,503 @@
+{
+  "fecha": "2026-11-14",
+  "fuente": "Diputacion Foral de Bizkaia y Ayuntamiento de Bilbao",
+  "crs": "EPSG:25830",
+  "consultas": {
+    "cat": "https://geo.bizkaia.eus/arcgisserverinspire/rest/services/Catastro/Annex1/MapServer/8/query?f=json&where=1%3D1&geometry=504650%2C4788800%2C504950%2C4789100&geometryType=esriGeometryEnvelope&inSR=25830&outSR=25830&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CnationalCadastralRef%2CareaValue%2CareaValue_uom%2CadmUnit%2CbeginLifespanVersion&orderByFields=OBJECTID",
+    "res": "https://geo.bizkaia.eus/arcgisserverinspire/rest/services/LurraldeAntolamendua_PlanificacionTerritorial/Plangintza_Planeamiento/MapServer/13/query?f=json&where=1%3D1&geometry=504650%2C4788800%2C504950%2C4789100&geometryType=esriGeometryEnvelope&inSR=25830&outSR=25830&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID",
+    "use": "https://geo.bizkaia.eus/arcgisserverinspire/rest/services/LurraldeAntolamendua_PlanificacionTerritorial/Plangintza_Planeamiento/MapServer/6/query?f=json&where=1%3D1&geometry=504650%2C4788800%2C504950%2C4789100&geometryType=esriGeometryEnvelope&inSR=25830&outSR=25830&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID",
+    "district": "https://geo.bizkaia.eus/arcgisserverinspire/rest/services/LurraldeAntolamendua_PlanificacionTerritorial/Plangintza_Planeamiento/MapServer/39/query?f=json&where=1%3D1&geometry=504650%2C4788800%2C504950%2C4789100&geometryType=esriGeometryEnvelope&inSR=25830&outSR=25830&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID"
+  },
+  "universo_parcelas": 36,
+  "seleccion": "Parcelas de Bilbao con al menos 99,98% de interseccion sobre su propia superficie en los cuatro subambitos RE.02.6 a RE.02.9 contrastados en las Normas Particulares de Rekalde.",
+  "criterio": "Los valores de techo sobre rasante corresponden al subambito. No se trasladan a maxBuildableAreaM2 sin verificar la parcela urbanistica y el reparto del techo. El uso residencial se registra como uso global de la capa.",
+  "parcelas": [
+    {
+      "ref": "48.020.1716.04003",
+      "oid": 69159,
+      "area": 1651.62,
+      "cadastralArea": 1651.62295001,
+      "hits": {
+        "res": [
+          {
+            "attrs": {
+              "OBJECTID": 25456780,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.9 (Isasi Andres 15)"
+            },
+            "pct": 99.99986453
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 0.00013547
+          }
+        ],
+        "use": [
+          {
+            "attrs": {
+              "OBJECTID": 25456780,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.9 (Isasi Andres 15)"
+            },
+            "pct": 99.99986453
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 0.00013547
+          }
+        ],
+        "district": [
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247909,
+              "NombreAmbito": "RE.02.9 (Isasi Andrés 15)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 1696.0,
+              "SupDelimitadaExcluidosSG": 1696.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 7508.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 62.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 99.99986453
+          }
+        ]
+      },
+      "contraste_pgou": {
+        "subambito": "RE.02.9",
+        "seccion": "IV.1.9",
+        "techo_total_sobre_rasante_m2t": 7508,
+        "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/NORMAS_URBANISTICAS_PARTICULARES_DISTRITOS_Y_SNU/7_REKALDE/07_Doc_2_2_NN_PP_REKALDE.pdf"
+      }
+    },
+    {
+      "ref": "48.020.1716.04004",
+      "oid": 68903,
+      "area": 868.89,
+      "cadastralArea": 868.89280001,
+      "hits": {
+        "res": [
+          {
+            "attrs": {
+              "OBJECTID": 25456777,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.8 (Isasi Andres 13)"
+            },
+            "pct": 99.98745025
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25458459,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.7 (Isasi Andres 11)"
+            },
+            "pct": 0.0124248
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25456780,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.9 (Isasi Andres 15)"
+            },
+            "pct": 6.707e-05
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 5.787e-05
+          }
+        ],
+        "use": [
+          {
+            "attrs": {
+              "OBJECTID": 25456777,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.8 (Isasi Andres 13)"
+            },
+            "pct": 99.98745025
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25458459,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.7 (Isasi Andres 11)"
+            },
+            "pct": 0.0124248
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25456780,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.9 (Isasi Andres 15)"
+            },
+            "pct": 6.707e-05
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 5.787e-05
+          }
+        ],
+        "district": [
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247910,
+              "NombreAmbito": "RE.02.8 (Isasi Andrés 13)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 901.0,
+              "SupDelimitadaExcluidosSG": 901.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 4285.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 36.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 99.98745025
+          },
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247911,
+              "NombreAmbito": "RE.02.7 (Isasi Andrés 11)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 1186.0,
+              "SupDelimitadaExcluidosSG": 1186.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 5520.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 46.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 0.0124248
+          },
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247909,
+              "NombreAmbito": "RE.02.9 (Isasi Andrés 15)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 1696.0,
+              "SupDelimitadaExcluidosSG": 1696.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 7508.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 62.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 6.707e-05
+          }
+        ]
+      },
+      "contraste_pgou": {
+        "subambito": "RE.02.8",
+        "seccion": "IV.1.8",
+        "techo_total_sobre_rasante_m2t": 4285,
+        "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/NORMAS_URBANISTICAS_PARTICULARES_DISTRITOS_Y_SNU/7_REKALDE/07_Doc_2_2_NN_PP_REKALDE.pdf"
+      }
+    },
+    {
+      "ref": "48.020.1716.04005",
+      "oid": 70903,
+      "area": 1176.96,
+      "cadastralArea": 1176.96409998,
+      "hits": {
+        "res": [
+          {
+            "attrs": {
+              "OBJECTID": 25458459,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.7 (Isasi Andres 11)"
+            },
+            "pct": 99.99989229
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 0.0001077
+          }
+        ],
+        "use": [
+          {
+            "attrs": {
+              "OBJECTID": 25458459,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.7 (Isasi Andres 11)"
+            },
+            "pct": 99.99989229
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 0.0001077
+          }
+        ],
+        "district": [
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247911,
+              "NombreAmbito": "RE.02.7 (Isasi Andrés 11)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 1186.0,
+              "SupDelimitadaExcluidosSG": 1186.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 5520.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 46.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 99.99989229
+          }
+        ]
+      },
+      "contraste_pgou": {
+        "subambito": "RE.02.7",
+        "seccion": "IV.1.7",
+        "techo_total_sobre_rasante_m2t": 5520,
+        "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/NORMAS_URBANISTICAS_PARTICULARES_DISTRITOS_Y_SNU/7_REKALDE/07_Doc_2_2_NN_PP_REKALDE.pdf"
+      }
+    },
+    {
+      "ref": "48.020.1727.03003",
+      "oid": 69989,
+      "area": 493.98,
+      "cadastralArea": 493.98104999,
+      "hits": {
+        "res": [
+          {
+            "attrs": {
+              "OBJECTID": 25458450,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.6 (Moncada 11 y Otros)"
+            },
+            "pct": 99.99998272
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 1.727e-05
+          }
+        ],
+        "use": [
+          {
+            "attrs": {
+              "OBJECTID": 25458450,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.6 (Moncada 11 y Otros)"
+            },
+            "pct": 99.99998272
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 1.727e-05
+          }
+        ],
+        "district": [
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247830,
+              "NombreAmbito": "RE.02.6 (Moncada 11 y otros)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 2023.0,
+              "SupDelimitadaExcluidosSG": 2023.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 8556.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 72.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 99.99998272
+          }
+        ]
+      },
+      "contraste_pgou": {
+        "subambito": "RE.02.6",
+        "seccion": "IV.1.6",
+        "techo_total_sobre_rasante_m2t": 8556,
+        "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/NORMAS_URBANISTICAS_PARTICULARES_DISTRITOS_Y_SNU/7_REKALDE/07_Doc_2_2_NN_PP_REKALDE.pdf"
+      }
+    },
+    {
+      "ref": "48.020.1727.03004",
+      "oid": 70486,
+      "area": 598.45,
+      "cadastralArea": 598.44850002,
+      "hits": {
+        "res": [
+          {
+            "attrs": {
+              "OBJECTID": 25458450,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02.6 (Moncada 11 y Otros)"
+            },
+            "pct": 99.99995152
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 4.848e-05
+          }
+        ],
+        "use": [
+          {
+            "attrs": {
+              "OBJECTID": 25458450,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02.6 (Moncada 11 y Otros)"
+            },
+            "pct": 99.99995152
+          },
+          {
+            "attrs": {
+              "OBJECTID": 25424582,
+              "Municipio": "BILBAO",
+              "UsoGlobalCA": "Residencial",
+              "UsoGlobalEU": "Bizitegia",
+              "NombreAmbito": "RE.02 Amezola-Irala"
+            },
+            "pct": 4.848e-05
+          }
+        ],
+        "district": [
+          {
+            "attrs": {
+              "Municipio": "BILBAO",
+              "OBJECTID": 1247830,
+              "NombreAmbito": "RE.02.6 (Moncada 11 y otros)",
+              "TipoActuacion": "Dotación",
+              "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha",
+              "CalificacionPormenorizadaEU": "Etxebizitza dentsitatea > 75 etxe/ha.",
+              "SuperficieDelimitada": 2023.0,
+              "SupDelimitadaExcluidosSG": 2023.0,
+              "SistGeneralesIncluidosAbscritos": "Ez / No",
+              "TechoEdificableTotalSR": 8556.0,
+              "TechoEdificableTotalBR": null,
+              "TechoEdificableVPPSR": null,
+              "TechoEdificableVTSR": null,
+              "NumeroViviendasTotales": 72.0,
+              "NumeroViviendasVPP": null,
+              "NumeroViviendasTasadas": null
+            },
+            "pct": 99.99995152
+          }
+        ]
+      },
+      "contraste_pgou": {
+        "subambito": "RE.02.6",
+        "seccion": "IV.1.6",
+        "techo_total_sobre_rasante_m2t": 8556,
+        "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/NORMAS_URBANISTICAS_PARTICULARES_DISTRITOS_Y_SNU/7_REKALDE/07_Doc_2_2_NN_PP_REKALDE.pdf"
+      }
+    }
+  ]
+}

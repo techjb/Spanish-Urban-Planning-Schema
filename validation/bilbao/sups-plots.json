@@ -1,0 +1,42 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "plotId": "BILBAO-CAT-48.020.1716.04003",
+    "parameters": {
+      "plotAreaM2": 1651.62
+    },
+    "calculationStatus": "PARTIAL"
+  },
+  {
+    "schemaVersion": "1.0",
+    "plotId": "BILBAO-CAT-48.020.1716.04004",
+    "parameters": {
+      "plotAreaM2": 868.89
+    },
+    "calculationStatus": "PARTIAL"
+  },
+  {
+    "schemaVersion": "1.0",
+    "plotId": "BILBAO-CAT-48.020.1716.04005",
+    "parameters": {
+      "plotAreaM2": 1176.96
+    },
+    "calculationStatus": "PARTIAL"
+  },
+  {
+    "schemaVersion": "1.0",
+    "plotId": "BILBAO-CAT-48.020.1727.03003",
+    "parameters": {
+      "plotAreaM2": 493.98
+    },
+    "calculationStatus": "PARTIAL"
+  },
+  {
+    "schemaVersion": "1.0",
+    "plotId": "BILBAO-CAT-48.020.1727.03004",
+    "parameters": {
+      "plotAreaM2": 598.45
+    },
+    "calculationStatus": "PARTIAL"
+  }
+]
