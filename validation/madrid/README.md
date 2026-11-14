@@ -1,55 +1,12 @@
-# Madrid — vector parcel urban planning validation (discovery)
+# Madrid — validación con 20 parcelas urbanísticas
 
-Date: 2026-11-14. **Status: source verified; no individual parcel records downloaded or calculated.**
+El 14 de noviembre de 2026 se ejecutó `python validation/madrid/import_plots.py --limit 20` con acceso al [ArcGIS del Ayuntamiento de Madrid](https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3). El importador del commit `702eed771ec6cb1e7dae9cfa9240dec5dfc83085` terminó con código 0.
 
-## Official service
+Se comprobaron 20 polígonos con anillos cerrados, 20 identificadores `UBOV_ID` únicos y una correspondencia uno a uno con 20 registros válidos de SUPS Plot 1.0. Por ejemplo, la parcela 6 (etiqueta `M12026`, ámbito `APE.10.22`) corresponde a `MADRID-UBOV-6`.
 
-- Dataset: https://datos.madrid.es/dataset/300744-0-usos-suelo-urbanismo
-- Layer metadata: https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3?f=pjson
-- Service: https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer?f=pjson
-- Official planning regulations: https://wpgeoportal.madrid.es/normativa-urbanistica/
-- GML-PU format and XSD: https://wpgeoportal.madrid.es/formato-gml-pu-de-parcela-urbanistica/
+El GeoJSON conserva el uso principal, el ámbito y la geometría. El campo `ZURV_TX_NOMBRE` llegó vacío en las 20 entidades. Los registros quedaron en `UNKNOWN` con `parameters: {}`. La edificabilidad, ocupación, retranqueos y altura requieren identificar la normativa aplicable a cada parcela.
 
-Layer 3, **Parcelas Urbanísticas**, is polygon geometry, spatial reference **EPSG:25830**, and supports **Query** with JSON, GeoJSON, PBF responses. The service's maximum per request is 2,000 records; use paging or spatial partitions for bulk ingestion.
-
-## Confirmed attributes
-
-| Source field | Meaning | SUPS target |
-| --- | --- | --- |
-| `UBOV_ID` | Urbanistic plot ID | plot identifier (verify schema property) |
-| `ZURV_TX_NOMBRE` | Urban planning zone name | zoning area reference / code after normalization |
-| `USP_TX_DENOM` | Primary use | primaryUse (normalize) |
-| `AMB_TX_ETIQ` | Planning scope | planning area code |
-| `AMB_TX_DENOM` | Scope name | planning area label |
-| `UBOV_TX_ETIQ` | Plot label | source plot label |
-| `SHAPE.STArea()` | Polygon area in square metres | geometric area; not necessarily legal net plot area |
-| `SHAPE` | Polygon | plot geometry |
-
-Do **not** assume GML-PU fields `NORMA` or `EDIFI` are fields in this ArcGIS layer: they do not appear in its published field list.
-
-## Next validation procedure
-
-1. Query a small set of actual layer-3 features; persist immutable source response and request URL.
-2. Normalize into SUPS Plot, retaining raw codes and geometries.
-3. Cross-check cadastral plots: urbanistic and cadastral parcels may not coincide 1:1. Record overlay/intersection area and mismatch.
-4. Map each planning zone to the applicable consolidated ordinance, amendments, and specific planning instruments.
-5. Compute only legally supported parameters; mark all others UNKNOWN or CONDITIONAL.
-6. Compare 10–20 plots with official viewer and record discrepancies.
-
-## Example ArcGIS REST query
-
-```
-GET https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3/query
-    ?where=1%3D1
-    &outFields=UBOV_ID,ZURV_TX_NOMBRE,USP_TX_DENOM,AMB_TX_ETIQ,AMB_TX_DENOM,UBOV_TX_ETIQ
-    &returnGeometry=true
-    &outSR=4326
-    &resultRecordCount=20
-    &f=geojson
-```
-
-The endpoint and fields are verified from official metadata, but **the query itself has not returned feature records in this environment**. No parcel-level calculation is claimed.
-
-## Legal caveat
-
-The municipal dataset explicitly says its interpretation of the planning designation has **no legal force**. Source ordinance and officially approved changes remain necessary for legal conclusions.
+- [Consulta reproducible y recuento](manifest.json)
+- [Entidades municipales](source.geojson)
+- [Registros SUPS Plot](sups-plots.json)
+- [Importador](import_plots.py)

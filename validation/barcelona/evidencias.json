@@ -1,0 +1,116 @@
+{
+  "fecha": "2026-11-14",
+  "crs": "EPSG:25831",
+  "catastro_url": "https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=WFS&version=2.0.0&request=GetFeature&typenames=cp%3ACadastralParcel&srsname=EPSG%3A%3A25831&bbox=430450%2C4582500%2C430700%2C4582750%2CEPSG%3A25831",
+  "calificaciones_url": "https://geoportal.amb.cat/geoserveis/rest/services/qualificacio_refos/MapServer/0/query?f=json&where=1%3D1&geometry=430400%2C4582450%2C430750%2C4582800&geometryType=esriGeometryEnvelope&inSR=25831&outSR=25831&spatialRel=esriSpatialRelIntersects&outFields=%2A",
+  "parametros_url": "https://geoportal.amb.cat/geoserveis/rest/services/qualificacio_refos/MapServer/1/query?f=json&where=1%3D1&geometry=430400%2C4582450%2C430750%2C4582800&geometryType=esriGeometryEnvelope&inSR=25831&outSR=25831&spatialRel=esriSpatialRelIntersects&outFields=%2A",
+  "parametros_entidades": 0,
+  "expedientes_url": "https://geoportal.amb.cat/geoserveis/rest/services/expedients_refos/MapServer/0/query?f=json&where=DGU+like+%27%252253%25%27+AND+CODI_INE%3D%2708019%27&outFields=DGU%2CCMB%2CNOMEXP%2CVIGENT%2CDAPRDEF%2CDPUBLIC%2CURL&returnGeometry=false",
+  "parcelas_recuperadas": 112,
+  "candidatas_con_solape": 110,
+  "seleccion": "Cinco primeras referencias ordenadas alfanumericamente con cobertura integra y exclusiva del poligono AMB 74768, con tolerancia numerica de 1e-8 puntos porcentuales.",
+  "poligono_amb": {
+    "SIGLES": "B",
+    "OBJECTID": 74768,
+    "EXP_PD": "2000/002253",
+    "CLAU_PD": "13E",
+    "CLAU_URB": "13a",
+    "PLAN": "PD*",
+    "EQUI_PGM": "13a*",
+    "COLOR": "13a",
+    "CODI_SECT": null,
+    "TIPUS_SECT": null,
+    "US_SECT": null,
+    "GRAU_DES": null,
+    "REGIM": "SU",
+    "CODI_INE": "08019",
+    "NOMMUNI": "Barcelona",
+    "PGM": "S",
+    "NORMATIV": "Barcelona",
+    "DESCRIP": "Densificació urbana intensiva",
+    "INE_URB": "PGM_13a",
+    "SHAPE_Length": 95378.28643461793,
+    "SHAPE_Area": 1865976.8596890285
+  },
+  "expediente": {
+    "DGU": "2000/002253",
+    "CMB": "BE201A",
+    "NOMEXP": "MPGM puntual de les NNUU per a l'adequació del règim urbanístic del Conjunt Especial de l'Eixample, creació de la qualificació 13 Eixample",
+    "VIGENT": "V",
+    "DAPRDEF": "2000-12-12",
+    "DPUBLIC": "2001-01-30",
+    "URL": "https://ajuntament.barcelona.cat/informaciourbanistica/cerca/ca/fitxa/BE201A/--/--/ap/"
+  },
+  "parcelas": [
+    {
+      "ref": "0427610DF3802G",
+      "cadastralAreaM2": 260,
+      "geometryAreaM2": 260.231,
+      "overlap": [
+        {
+          "objectId": 74768,
+          "code": "13a",
+          "plan": "2000/002253",
+          "municipality": "08019",
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "ref": "0427611DF3802G",
+      "cadastralAreaM2": 125,
+      "geometryAreaM2": 125.136,
+      "overlap": [
+        {
+          "objectId": 74768,
+          "code": "13a",
+          "plan": "2000/002253",
+          "municipality": "08019",
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "ref": "0427612DF3802G",
+      "cadastralAreaM2": 262,
+      "geometryAreaM2": 262.022,
+      "overlap": [
+        {
+          "objectId": 74768,
+          "code": "13a",
+          "plan": "2000/002253",
+          "municipality": "08019",
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "ref": "0526601DF3802F",
+      "cadastralAreaM2": 221,
+      "geometryAreaM2": 221.26,
+      "overlap": [
+        {
+          "objectId": 74768,
+          "code": "13a",
+          "plan": "2000/002253",
+          "municipality": "08019",
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "ref": "0526602DF3802F",
+      "cadastralAreaM2": 219,
+      "geometryAreaM2": 218.909,
+      "overlap": [
+        {
+          "objectId": 74768,
+          "code": "13a",
+          "plan": "2000/002253",
+          "municipality": "08019",
+          "pct": 100.0
+        }
+      ]
+    }
+  ]
+}
