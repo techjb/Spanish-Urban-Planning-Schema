@@ -22,7 +22,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Identificadores de las ordenanzas aplicables al ámbito; pueden existir varias reglas superpuestas."
+      "description": "Identificadores de las ordenanzas aplicables al ámbito; pueden existir varias reglas superpuestas. Puede estar vacío en un ámbito que solo represente clasificación de suelo."
     },
     "geometry": {
       "type": "object",
@@ -44,6 +44,60 @@
         }
       },
       "description": "Geometría poligonal GeoJSON que delimita el ámbito de zonificación."
+    },
+    "areaType": {
+      "enum": [
+        "ZONING",
+        "LAND_CLASSIFICATION",
+        "MIXED"
+      ],
+      "description": "Naturaleza del ámbito; una zona de clasificación no equivale necesariamente a una zona de ordenanza."
+    },
+    "landClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "class"
+      ],
+      "properties": {
+        "class": {
+          "enum": [
+            "URBAN",
+            "DEVELOPABLE",
+            "NON_DEVELOPABLE",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "category": {
+          "enum": [
+            "CONSOLIDATED",
+            "UNCONSOLIDATED",
+            "SECTORIZED",
+            "NON_SECTORIZED",
+            "COMMON",
+            "PROTECTED",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "originalClass": {
+          "type": "string"
+        },
+        "originalCategory": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "sourceDocumentId": {
+          "type": "string"
+        },
+        "effectiveDate": {
+          "type": "string",
+          "format": "date"
+        }
+      }
     }
   },
   "description": "Ámbito geográfico de zonificación asociado a una o varias ordenanzas."
