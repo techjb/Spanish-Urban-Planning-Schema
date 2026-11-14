@@ -1,0 +1,216 @@
+{
+  "version": "1.0-draft",
+  "descriptionEs": "Taxonomía jerárquica de uso característico de zonas; no equivale por sí sola a usos permitidos en una parcela.",
+  "uses": [
+    {
+      "id": "RESIDENTIAL",
+      "labelEs": "Residencial",
+      "subtypes": [
+        {
+          "id": "SINGLE_FAMILY",
+          "labelEs": "Unifamiliar"
+        },
+        {
+          "id": "MULTIFAMILY",
+          "labelEs": "Plurifamiliar"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro residencial"
+        }
+      ]
+    },
+    {
+      "id": "COMMERCIAL",
+      "labelEs": "Comercial",
+      "subtypes": [
+        {
+          "id": "RETAIL",
+          "labelEs": "Comercio minorista"
+        },
+        {
+          "id": "LARGE_RETAIL",
+          "labelEs": "Gran superficie"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro comercial"
+        }
+      ]
+    },
+    {
+      "id": "OFFICE",
+      "labelEs": "Oficinas",
+      "subtypes": [
+        {
+          "id": "GENERAL",
+          "labelEs": "Oficinas"
+        }
+      ]
+    },
+    {
+      "id": "HOTEL",
+      "labelEs": "Alojamiento turístico",
+      "subtypes": [
+        {
+          "id": "HOTEL",
+          "labelEs": "Hotelero"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro alojamiento"
+        }
+      ]
+    },
+    {
+      "id": "TERTIARY",
+      "labelEs": "Terciario genérico",
+      "subtypes": [
+        {
+          "id": "MIXED",
+          "labelEs": "Mixto"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro terciario"
+        }
+      ]
+    },
+    {
+      "id": "INDUSTRIAL",
+      "labelEs": "Industrial",
+      "subtypes": [
+        {
+          "id": "MANUFACTURING",
+          "labelEs": "Producción"
+        },
+        {
+          "id": "WAREHOUSE",
+          "labelEs": "Almacén"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro industrial"
+        }
+      ]
+    },
+    {
+      "id": "LOGISTICS",
+      "labelEs": "Logístico",
+      "subtypes": [
+        {
+          "id": "DISTRIBUTION",
+          "labelEs": "Distribución"
+        }
+      ]
+    },
+    {
+      "id": "FACILITIES",
+      "labelEs": "Dotacional / equipamientos",
+      "subtypes": [
+        {
+          "id": "EDUCATION",
+          "labelEs": "Educativo"
+        },
+        {
+          "id": "HEALTH",
+          "labelEs": "Sanitario"
+        },
+        {
+          "id": "SPORTS",
+          "labelEs": "Deportivo"
+        },
+        {
+          "id": "SOCIAL",
+          "labelEs": "Social"
+        },
+        {
+          "id": "ADMINISTRATIVE",
+          "labelEs": "Administrativo"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro equipamiento"
+        }
+      ]
+    },
+    {
+      "id": "AGRICULTURAL",
+      "labelEs": "Agropecuario",
+      "subtypes": [
+        {
+          "id": "FARMING",
+          "labelEs": "Agrícola"
+        },
+        {
+          "id": "LIVESTOCK",
+          "labelEs": "Ganadero"
+        }
+      ]
+    },
+    {
+      "id": "GREEN_SPACE",
+      "labelEs": "Espacios libres y zonas verdes",
+      "subtypes": [
+        {
+          "id": "PARK",
+          "labelEs": "Parque"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otro espacio libre"
+        }
+      ]
+    },
+    {
+      "id": "INFRASTRUCTURE",
+      "labelEs": "Infraestructuras y servicios",
+      "subtypes": [
+        {
+          "id": "TRANSPORT",
+          "labelEs": "Transporte"
+        },
+        {
+          "id": "UTILITIES",
+          "labelEs": "Servicios urbanos"
+        }
+      ]
+    },
+    {
+      "id": "MIXED",
+      "labelEs": "Uso mixto sin predominante inequívoco",
+      "subtypes": [
+        {
+          "id": "OTHER",
+          "labelEs": "Mixto"
+        }
+      ]
+    },
+    {
+      "id": "OTHER",
+      "labelEs": "Otro uso",
+      "subtypes": [
+        {
+          "id": "OTHER",
+          "labelEs": "No homologable"
+        }
+      ]
+    },
+    {
+      "id": "UNKNOWN",
+      "labelEs": "Desconocido",
+      "subtypes": [
+        {
+          "id": "UNKNOWN",
+          "labelEs": "Desconocido"
+        }
+      ]
+    }
+  ],
+  "mappingRules": [
+    "Separar uso característico de zona y usos jurídicamente permitidos.",
+    "Conservar código y denominación originales.",
+    "No equiparar automáticamente uso terciario a comercial ni industrial a logístico.",
+    "Cuando haya varios usos sin predominio verificable usar MIXED o UNKNOWN."
+  ]
+}
