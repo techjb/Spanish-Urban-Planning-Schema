@@ -8,24 +8,31 @@
   ],
   "properties": {
     "sourceId": {
-      "type": "string"
+      "type": "string",
+      "description": "Identificador único de la referencia normativa."
     },
     "documentId": {
-      "type": "string"
+      "type": "string",
+      "description": "Identificador del documento de planeamiento al que pertenece esta referencia."
     },
     "article": {
-      "type": "string"
+      "type": "string",
+      "description": "Artículo, apartado o sección exacta de la norma que respalda el dato."
     },
     "page": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 1,
+      "description": "Número de página del documento original (comenzando en 1)."
     },
     "originalText": {
-      "type": "string"
+      "type": "string",
+      "description": "Transcripción o fragmento relevante de la disposición original para auditoría y revisión."
     },
     "url": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "description": "Enlace público al documento o fragmento de origen."
     }
-  }
+  },
+  "description": "Referencia trazable a un fragmento específico de un documento normativo."
 }
