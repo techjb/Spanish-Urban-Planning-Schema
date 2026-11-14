@@ -1,7 +1,14 @@
 # SUPS 1.0 data model
 
-SUPS separates **Regulation** (normalized municipal planning rules) from **Plot** (resolved parcel-level parameters). A **Planning Document** identifies legal instruments; a **Zoning Area** relates geographical areas to regulations; a **Regulation Source** traces facts to articles and pages.
+SUPS distinguishes **Cadastral Plot** (cadastre-derived parcel and measured or official attributes) from **Urban Planning Plot** (planning-source plot and its resolved or unresolved urbanistic parameters). They are not necessarily spatially identical; one-to-many and many-to-many relationships are possible. Do not invent cadastral references or equivalences.
 
-Parameters may be fixed, conditional in natural language, unknown, or not applicable. Conditional expressions are deliberately not executable in version 1.0. Absence of a parameter must not be interpreted as unrestricted permission. A plot can refer to multiple regulation versions.
+- `schemas/v1/cadastral-plot.schema.json`: cadastral reference, provenance, official area (only if reported), GIS-measured area (if calculated), cadastral use and optional geometry.
+- `schemas/v1/urban-planning-plot.schema.json`: municipal planning plot ID, planning source, applicable regulation references, parameter values and calculation status.
+- `schemas/v1/zoning-area.schema.json`: zone geometry, **not** necessarily an urban planning parcel.
+- Regulation, Planning Document and Regulation Source retain their existing meanings.
 
-All example values are fictitious. SUPS is not an official Spanish government standard or a substitute for legal planning verification.
+The `plotId` is an urban-planning-source identifier, not a cadastral reference. Links between entities must be evidenced; polygon overlap alone is not legal equivalence. Subarea-wide buildability is not automatically a parcel entitlement. A geometrically measured area is not automatically the legally relevant plot area.
+
+Fixtures: Madrid has 20 urban-planning plots with unknown parameters; València, Barcelona and Bilbao have five cadastral parcels each with GIS-measured areas. These are source-data/structural validations, **not** certified effective building rights.
+
+Conditions in natural language are not executable; absence of a parameter never means unrestricted permission. SUPS is a community draft, not an official standard.
