@@ -1,0 +1,62 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "6116402YJ2761E",
+    "source": {
+      "dataset": "Ajuntament de València urban cadastral parcels"
+    },
+    "measuredAreaM2": 202.09,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "6116406YJ2761E",
+    "source": {
+      "dataset": "Ajuntament de València urban cadastral parcels"
+    },
+    "measuredAreaM2": 189.94,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "6116213YJ2761E",
+    "source": {
+      "dataset": "Ajuntament de València urban cadastral parcels"
+    },
+    "measuredAreaM2": 89.24,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "6116204YJ2761E",
+    "source": {
+      "dataset": "Ajuntament de València urban cadastral parcels"
+    },
+    "measuredAreaM2": 179.46,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "6116212YJ2761E",
+    "source": {
+      "dataset": "Ajuntament de València urban cadastral parcels"
+    },
+    "measuredAreaM2": 93.64,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  }
+]
