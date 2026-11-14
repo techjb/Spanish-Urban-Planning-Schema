@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPS Plot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "plotId",
+    "parameters",
+    "calculationStatus"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "plotId": {
+      "type": "string"
+    },
+    "regulationRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "regulationId"
+        ],
+        "properties": {
+          "regulationId": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "string",
+          "boolean",
+          "array",
+          "object",
+          "null"
+        ]
+      }
+    },
+    "calculationStatus": {
+      "enum": [
+        "RESOLVED",
+        "PARTIAL",
+        "UNKNOWN",
+        "REQUIRES_REVIEW"
+      ]
+    },
+    "calculatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
