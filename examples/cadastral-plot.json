@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "cadastralReference": "1234567VK4713A",
+  "source": {
+    "dataset": "Catastro — ejemplo ficticio"
+  },
+  "cadastralNature": "MIXED",
+  "officialAreaM2": 1250,
+  "officialBuiltAreaM2": 420,
+  "cadastralUse": "Residencial"
+}
