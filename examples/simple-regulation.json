@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "regulationId": "EXAMPLE-NZ-1",
+  "municipalityCode": "28079",
+  "name": "Ordenanza ficticia residencial",
+  "planningDocumentId": "EXAMPLE-PGOU",
+  "parameters": {
+    "maxBuildabilityRatio": {
+      "status": "FIXED",
+      "value": 1.5
+    },
+    "maxOccupancyPct": {
+      "status": "FIXED",
+      "value": 40
+    },
+    "maxFloors": {
+      "status": "FIXED",
+      "value": 3
+    }
+  }
+}
