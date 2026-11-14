@@ -8,10 +8,97 @@
     }
   ],
   "parameters": {
-    "maxBuildabilityRatio": 1.5,
+    "plotAreaM2": 1000,
+    "effectiveBuildabilityRatio": 1.5,
+    "effectiveBuildableAreaM2": 1500,
     "maxOccupancyPct": 40,
     "maxFloors": 3
   },
-  "calculationStatus": "RESOLVED",
-  "calculatedAt": "2026-11-14T00:00:00Z"
+  "calculationStatus": "PARTIAL",
+  "calculatedAt": "2026-11-14T00:00:00Z",
+  "analysisUnit": {
+    "type": "URBAN_PLANNING_PLOT",
+    "id": "EXAMPLE-PLOT-1",
+    "relationshipStatus": "VERIFIED"
+  },
+  "parameterEvidence": {
+    "plotAreaM2": {
+      "status": "RESOLVED",
+      "method": "OFFICIAL",
+      "sourceAreaIds": [
+        "EXAMPLE-AREA-1"
+      ]
+    },
+    "effectiveBuildabilityRatio": {
+      "status": "RESOLVED",
+      "method": "CALCULATED",
+      "sourceRegulationIds": [
+        "EXAMPLE-NZ-1"
+      ]
+    },
+    "effectiveBuildableAreaM2": {
+      "status": "RESOLVED",
+      "method": "CALCULATED",
+      "basisAreaM2": 1000,
+      "sourceRegulationIds": [
+        "EXAMPLE-NZ-1"
+      ]
+    }
+  },
+  "allowedUses": [
+    {
+      "use": "RESIDENTIAL",
+      "originalUse": "Residencial",
+      "status": "ALLOWED",
+      "role": "PRIMARY",
+      "maxBuildableAreaM2": 1500,
+      "evidence": {
+        "status": "RESOLVED",
+        "method": "CALCULATED",
+        "sourceRegulationIds": [
+          "EXAMPLE-NZ-1"
+        ]
+      }
+    },
+    {
+      "use": "COMMERCIAL",
+      "status": "CONDITIONAL",
+      "role": "COMPATIBLE",
+      "maxBuildableAreaM2": 300,
+      "conditions": [
+        "Sujeto a condiciones específicas de la ordenanza."
+      ],
+      "evidence": {
+        "status": "ESTIMATED",
+        "method": "INFERRED",
+        "sourceRegulationIds": [
+          "EXAMPLE-NZ-1"
+        ]
+      }
+    },
+    {
+      "use": "INDUSTRIAL",
+      "status": "PROHIBITED",
+      "role": "UNKNOWN",
+      "evidence": {
+        "status": "RESOLVED",
+        "method": "OFFICIAL",
+        "sourceRegulationIds": [
+          "EXAMPLE-NZ-1"
+        ]
+      }
+    }
+  ],
+  "landClassification": {
+    "class": "URBAN",
+    "category": "CONSOLIDATED",
+    "originalClass": "Suelo urbano",
+    "originalCategory": "Suelo urbano consolidado",
+    "jurisdiction": "Comunidad de Madrid",
+    "planningStatus": "UNKNOWN",
+    "verificationStatus": "VERIFIED",
+    "sourceAreaIds": [
+      "EXAMPLE-AREA-1"
+    ]
+  }
 }
