@@ -34,7 +34,7 @@ def propose_use(label):
         (r"\bHOTELER", "HOTEL", "HOTEL"),
         (r"\bINDUSTRIAL\b", "INDUSTRIAL", "OTHER"),
         (r"\bLOGISTIC", "LOGISTICS", "DISTRIBUTION"),
-        (r"\bEQUIPAMIENTO\\b|\\bDOTACIONAL\b", "FACILITIES", "OTHER")
+        (r"\bEQUIPAMIENTO\b|\bDOTACIONAL\b", "FACILITIES", "OTHER")
     ]
     for pattern, use, subtype in rules:
         if re.search(pattern, t):
