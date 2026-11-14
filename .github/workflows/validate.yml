@@ -13,3 +13,4 @@ jobs:
       - run: python tests/validate_municipalities.py
       - run: python tests/validate_filters.py
       - run: python tests/validate_vocabularies.py
+      - run: python tests/validate_madrid_uses.py
