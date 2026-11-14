@@ -113,6 +113,320 @@
         "type": "string"
       },
       "description": "Referencias catastrales verificadas relacionadas espacialmente; no presupone equivalencia uno a uno."
+    },
+    "analysisUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "URBAN_PLANNING_PLOT",
+            "CADASTRAL_PLOT",
+            "OTHER"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationshipStatus": {
+          "enum": [
+            "VERIFIED",
+            "SPATIAL_OVERLAP",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "description": "Unidad espacial del cálculo; no presupone equivalencia entre parcelas catastrales y urbanísticas."
+    },
+    "parameterEvidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "status",
+          "method"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "RESOLVED",
+              "ESTIMATED",
+              "UNKNOWN",
+              "REQUIRES_REVIEW"
+            ]
+          },
+          "method": {
+            "enum": [
+              "OFFICIAL",
+              "CALCULATED",
+              "INFERRED",
+              "MANUAL_REVIEW"
+            ]
+          },
+          "basisAreaM2": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "sourceRegulationIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceAreaIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "verifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "description": "Evidencia y estado individual por parámetro, independiente del estado global."
+    },
+    "allowedUses": {
+      "type": "array",
+      "description": "Usos urbanísticos por unidad de análisis. Los máximos de usos diferentes no son necesariamente acumulables.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "use",
+          "status",
+          "role",
+          "evidence"
+        ],
+        "properties": {
+          "use": {
+            "enum": [
+              "RESIDENTIAL",
+              "COMMERCIAL",
+              "INDUSTRIAL",
+              "TERTIARY",
+              "OFFICE",
+              "HOTEL",
+              "LOGISTICS",
+              "FACILITIES",
+              "AGRICULTURAL",
+              "OTHER"
+            ]
+          },
+          "originalUse": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "ALLOWED",
+              "CONDITIONAL",
+              "PROHIBITED",
+              "UNKNOWN"
+            ]
+          },
+          "role": {
+            "enum": [
+              "PRIMARY",
+              "COMPATIBLE",
+              "ALTERNATIVE",
+              "COMPLEMENTARY",
+              "UNKNOWN"
+            ]
+          },
+          "maxBuildableAreaM2": {
+            "type": "number",
+            "minimum": 0
+          },
+          "maxBuildabilityRatio": {
+            "type": "number",
+            "minimum": 0
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "method"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "RESOLVED",
+                  "ESTIMATED",
+                  "UNKNOWN",
+                  "REQUIRES_REVIEW"
+                ]
+              },
+              "method": {
+                "enum": [
+                  "OFFICIAL",
+                  "CALCULATED",
+                  "INFERRED",
+                  "MANUAL_REVIEW"
+                ]
+              },
+              "basisAreaM2": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "sourceRegulationIds": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sourceAreaIds": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "notes": {
+                "type": "string"
+              },
+              "verifiedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    },
+    "landClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "class",
+        "verificationStatus"
+      ],
+      "properties": {
+        "class": {
+          "enum": [
+            "URBAN",
+            "DEVELOPABLE",
+            "NON_DEVELOPABLE",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "category": {
+          "enum": [
+            "CONSOLIDATED",
+            "UNCONSOLIDATED",
+            "SECTORIZED",
+            "NON_SECTORIZED",
+            "COMMON",
+            "PROTECTED",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "originalClass": {
+          "type": "string"
+        },
+        "originalCategory": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "planningStatus": {
+          "enum": [
+            "DIRECT_DEVELOPMENT",
+            "REQUIRES_MANAGEMENT",
+            "REQUIRES_PLANNING",
+            "RESTRICTED",
+            "UNKNOWN"
+          ]
+        },
+        "verificationStatus": {
+          "enum": [
+            "VERIFIED",
+            "ESTIMATED",
+            "UNKNOWN",
+            "REQUIRES_REVIEW"
+          ]
+        },
+        "sourceAreaIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceRegulationIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "effectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "landClassificationOverlays": {
+      "type": "array",
+      "description": "Clasificaciones que afectan a porciones de la unidad; no inferir que la clase predominante cubre el 100%.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "class",
+          "areaM2",
+          "sourceAreaId"
+        ],
+        "properties": {
+          "class": {
+            "enum": [
+              "URBAN",
+              "DEVELOPABLE",
+              "NON_DEVELOPABLE",
+              "OTHER",
+              "UNKNOWN"
+            ]
+          },
+          "category": {
+            "type": "string"
+          },
+          "areaM2": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "sourceAreaId": {
+            "type": "string"
+          },
+          "percentage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
     }
   },
   "description": "Parcela urbanística identificada en fuente de planeamiento; no equivale necesariamente a parcela catastral ni a zona de ordenanza."
