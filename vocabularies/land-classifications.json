@@ -1,0 +1,86 @@
+{
+  "version": "1.0-draft",
+  "descriptionEs": "Taxonomía orientativa de clasificación urbanística; la equivalencia depende de la legislación autonómica y no acredita aprovechamiento.",
+  "classes": [
+    {
+      "id": "URBAN",
+      "labelEs": "Urbano",
+      "categories": [
+        {
+          "id": "CONSOLIDATED",
+          "labelEs": "Consolidado"
+        },
+        {
+          "id": "UNCONSOLIDATED",
+          "labelEs": "No consolidado"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otra categoría autonómica"
+        }
+      ]
+    },
+    {
+      "id": "DEVELOPABLE",
+      "labelEs": "Urbanizable",
+      "categories": [
+        {
+          "id": "SECTORIZED",
+          "labelEs": "Sectorizado o delimitado"
+        },
+        {
+          "id": "NON_SECTORIZED",
+          "labelEs": "No sectorizado o no delimitado"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otra categoría autonómica"
+        }
+      ]
+    },
+    {
+      "id": "NON_DEVELOPABLE",
+      "labelEs": "No urbanizable o rústico según legislación urbanística",
+      "categories": [
+        {
+          "id": "COMMON",
+          "labelEs": "Común"
+        },
+        {
+          "id": "PROTECTED",
+          "labelEs": "Protegido"
+        },
+        {
+          "id": "OTHER",
+          "labelEs": "Otra categoría autonómica"
+        }
+      ]
+    },
+    {
+      "id": "OTHER",
+      "labelEs": "Otra clase autonómica",
+      "categories": [
+        {
+          "id": "OTHER",
+          "labelEs": "No homologable"
+        }
+      ]
+    },
+    {
+      "id": "UNKNOWN",
+      "labelEs": "Desconocido",
+      "categories": [
+        {
+          "id": "UNKNOWN",
+          "labelEs": "Desconocida"
+        }
+      ]
+    }
+  ],
+  "mappingRules": [
+    "Preservar siempre los valores originales y la jurisdicción.",
+    "No inferir edificabilidad ni condición de solar a partir de la clase.",
+    "Si no existe equivalencia legal inequívoca usar OTHER/UNKNOWN y revisión humana.",
+    "No confundir naturaleza catastral URBAN/RUSTIC con clasificación urbanística."
+  ]
+}
