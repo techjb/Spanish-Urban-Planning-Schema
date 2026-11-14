@@ -38,3 +38,26 @@ else:
     raise AssertionError("Invalid use status accepted")
 area_validator.validate({"schemaVersion":"1.0","areaId":"EXAMPLE-CLASSIFICATION-1","regulationIds":[],"areaType":"LAND_CLASSIFICATION","landClassification":{"class":"URBAN","category":"CONSOLIDATED"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,0]]]}})
 print("PASS: parcel filter example, invalid values rejected, classification-only area accepted")
+
+cadastral_validator=schema("cadastral-plot")
+cadastral=json.loads((ROOT/"examples/cadastral-plot.json").read_text())
+cadastral_validator.validate(cadastral)
+assert cadastral["cadastralNature"]=="MIXED"
+assert cadastral["officialBuiltAreaM2"]==420
+invalid=copy.deepcopy(cadastral)
+invalid["cadastralNature"]="DEVELOPABLE"
+try:
+    cadastral_validator.validate(invalid)
+except ValidationError:
+    pass
+else:
+    raise AssertionError("Urban planning class accepted as cadastral nature")
+invalid=copy.deepcopy(cadastral)
+invalid["officialBuiltAreaM2"]=-1
+try:
+    cadastral_validator.validate(invalid)
+except ValidationError:
+    pass
+else:
+    raise AssertionError("Negative built area accepted")
+print("PASS: cadastral nature and built area checks")
