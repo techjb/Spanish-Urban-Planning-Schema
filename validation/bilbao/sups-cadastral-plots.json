@@ -1,0 +1,62 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "48.020.1716.04003",
+    "source": {
+      "dataset": "Diputación Foral de Bizkaia cadastral parcel data"
+    },
+    "measuredAreaM2": 1651.62,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "48.020.1716.04004",
+    "source": {
+      "dataset": "Diputación Foral de Bizkaia cadastral parcel data"
+    },
+    "measuredAreaM2": 868.89,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "48.020.1716.04005",
+    "source": {
+      "dataset": "Diputación Foral de Bizkaia cadastral parcel data"
+    },
+    "measuredAreaM2": 1176.96,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "48.020.1727.03003",
+    "source": {
+      "dataset": "Diputación Foral de Bizkaia cadastral parcel data"
+    },
+    "measuredAreaM2": 493.98,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  },
+  {
+    "schemaVersion": "1.0",
+    "cadastralReference": "48.020.1727.03004",
+    "source": {
+      "dataset": "Diputación Foral de Bizkaia cadastral parcel data"
+    },
+    "measuredAreaM2": 598.45,
+    "measurement": {
+      "method": "GIS polygon area",
+      "crs": "EPSG:25830"
+    }
+  }
+]
