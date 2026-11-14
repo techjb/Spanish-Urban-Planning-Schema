@@ -7,7 +7,7 @@
 ## Model
 
 - **Regulation**: normalized municipal ordinance parameters, including fixed values and non-executable natural-language conditions.
-- **Cadastral Plot**: cadastral reference, source, cadastral attributes and explicitly distinguished measured versus official area.
+- **Cadastral Plot**: cadastral reference, source, urban/rustic/mixed cadastral nature, official built area, and explicitly distinguished measured versus official land area.
 - **Urban Planning Plot**: planning-source plot and effective or unresolved urbanistic parameters, including per-parameter evidence, allowed/conditional/prohibited uses, and normalized land classification. These entities are not necessarily equivalent.
 - **Planning Document**: source planning instrument.
 - **Zoning Area**: geographic applicability, including zoning and land-classification polygons (GeoJSON-like geometry).
