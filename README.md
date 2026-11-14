@@ -7,9 +7,10 @@
 ## Model
 
 - **Regulation**: normalized municipal ordinance parameters, including fixed values and non-executable natural-language conditions.
-- **Cadastral Plot**: cadastral reference, source, cadastral attributes and explicitly distinguished measured versus official area.\n- **Urban Planning Plot**: planning-source plot and effective or unresolved urbanistic parameters. These entities are not necessarily equivalent.
+- **Cadastral Plot**: cadastral reference, source, cadastral attributes and explicitly distinguished measured versus official area.
+- **Urban Planning Plot**: planning-source plot and effective or unresolved urbanistic parameters, including per-parameter evidence, allowed/conditional/prohibited uses, and normalized land classification. These entities are not necessarily equivalent.
 - **Planning Document**: source planning instrument.
-- **Zoning Area**: geographic applicability (GeoJSON-like geometry).
+- **Zoning Area**: geographic applicability, including zoning and land-classification polygons (GeoJSON-like geometry).
 - **Regulation Source**: article/page provenance.
 
 The [parameter catalogue](vocabularies/parameters.json) defines **178 identifiers** across 15 groups. This is a draft vocabulary: definitions, legal equivalences and units must be refined against real municipal plans before stable release.
@@ -27,7 +28,9 @@ The [parameter catalogue](vocabularies/parameters.json) defines **178 identifier
 
 ```bash
 pip install -r requirements-dev.txt
-python tests/validate.py\npython tests/validate_municipalities.py
+python tests/validate.py
+python tests/validate_municipalities.py
+python tests/validate_filters.py
 ```
 
 ## Principles
@@ -46,3 +49,7 @@ This repository contains an **initial draft**, not a legally validated or featur
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Goolzoom Suelo search attributes
+
+Search-ready attributes include `parameters.effectiveBuildabilityRatio`, `parameters.effectiveBuildableAreaM2`, `parameterEvidence`, `allowedUses`, and `landClassification`. Only resolved/verified values should be presented as confirmed; estimated or unknown values must remain distinguishable. Use a materialized indexed search table for high-volume filtering. A planning parcel is not necessarily a cadastral parcel, and multiple classifications can overlap an analysis unit. See [search model](docs/search-filters.md).
