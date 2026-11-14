@@ -21,10 +21,12 @@ El campo foral `TechoEdificableTotalSR` coincide con el total sobre rasante publ
 
 ## Correspondencia con SUPS Plot
 
-Los cinco registros cumplen SUPS Plot 1.0 y tienen estado `PARTIAL`. El parámetro `plotAreaM2` recoge la superficie geométrica catastral. El techo contrastado corresponde a cada subámbito completo. En RE.02.6, dos referencias de la muestra comparten el mismo total de 8.556 m²t. Para asignar `maxBuildableAreaM2` hace falta identificar las parcelas urbanísticas y verificar el reparto del techo. El uso residencial se conserva como uso global de la capa foral.
+Los cinco registros cumplen SUPS Cadastral Plot 1.0 y tienen estado `PARTIAL`. El parámetro `plotAreaM2` recoge la superficie geométrica catastral. El techo contrastado corresponde a cada subámbito completo. En RE.02.6, dos referencias de la muestra comparten el mismo total de 8.556 m²t. Para asignar `maxBuildableAreaM2` hace falta identificar las parcelas urbanísticas y verificar el reparto del techo. El uso residencial se conserva como uso global de la capa foral.
 
 ## Archivos
 
-- [Registros SUPS Plot](sups-plots.json).
+- [Registros SUPS Plot](sups-cadastral-plots.json).
 - [Evidencias, solapes y consultas reproducibles](evidencias.json).
 - [Respuestas originales de los servicios forales](respuestas-oficiales.zip), archivadas sin alterar los datos devueltos. Fuente: Bizkaiko Foru Aldundia – Diputación Foral de Bizkaia. [Condiciones de reutilización](https://www.bizkaia.eus/es/inspirebizkaia).
+
+> Nota de migración: los registros se almacenan como parcelas catastrales con `measuredAreaM2` (superficie geométrica), no como parcelas urbanísticas ni derechos edificatorios efectivos. El estado `PARTIAL` del antiguo modelo mixto no se traslada a la entidad catastral.
