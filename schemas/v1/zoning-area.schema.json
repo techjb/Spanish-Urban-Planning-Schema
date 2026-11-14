@@ -10,16 +10,19 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0"
+      "const": "1.0",
+      "description": "Versión del esquema SUPS utilizada para interpretar este objeto."
     },
     "areaId": {
-      "type": "string"
+      "type": "string",
+      "description": "Identificador único del ámbito o polígono de zonificación."
     },
     "regulationIds": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "Identificadores de las ordenanzas aplicables al ámbito; pueden existir varias reglas superpuestas."
     },
     "geometry": {
       "type": "object",
@@ -32,12 +35,16 @@
           "enum": [
             "Polygon",
             "MultiPolygon"
-          ]
+          ],
+          "description": "Tipo geométrico GeoJSON: Polygon o MultiPolygon."
         },
         "coordinates": {
-          "type": "array"
+          "type": "array",
+          "description": "Coordenadas GeoJSON del polígono; respetar el orden y sistema de referencia definido por GeoJSON."
         }
-      }
+      },
+      "description": "Geometría poligonal GeoJSON que delimita el ámbito de zonificación."
     }
-  }
+  },
+  "description": "Ámbito geográfico de zonificación asociado a una o varias ordenanzas."
 }
