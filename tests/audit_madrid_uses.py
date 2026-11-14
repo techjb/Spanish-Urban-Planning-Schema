@@ -65,7 +65,7 @@ def main():
         raise RuntimeError("Distinct/pagination not advertised; cannot guarantee complete results")
     size=min(int(meta.get("maxRecordCount",1000)),1000)
     assert size>0
-    seen=set()
+    seen={}
     offset=0
     while True:
         response=fetch(BASE+"/query",{"f":"json","where":"1=1","outFields":FIELDS,
@@ -75,7 +75,8 @@ def main():
         if not batch: break
         for f in batch:
             a=f["attributes"]
-            seen.add((normalize(a.get("UGI_ID")),normalize(a.get("USP_TX_DENOM"))))
+            key=(normalize(a.get("UGI_ID")),normalize(a.get("USP_TX_DENOM")))
+            seen.setdefault(key,(a.get("UGI_ID"),a.get("USP_TX_DENOM")))
         offset+=len(batch)
         print("Distinct pairs fetched:",offset)
         if len(batch)<size and not response.get("exceededTransferLimit",False): break
@@ -84,7 +85,8 @@ def main():
     catalogue=json.loads((ROOT/"vocabularies/land-uses.json").read_text(encoding="utf-8"))
     valid={u["id"]:{s["id"] for s in u["subtypes"]} for u in catalogue["uses"]}
     mappings=[]
-    for code,label in sorted(seen):
+    for key in sorted(seen):
+        code,label=seen[key]
         use,subtype=propose(label,code)
         assert use in valid and subtype in valid[use]
         mappings.append({"originalCode":code,"originalLabel":label,"normalizedUse":use,
