@@ -94,6 +94,20 @@
         "type": "string"
       },
       "description": "Vínculos verificados con parcelas urbanísticas; la relación puede ser muchos a muchos."
+    },
+    "cadastralNature": {
+      "enum": [
+        "URBAN",
+        "RUSTIC",
+        "MIXED",
+        "UNKNOWN"
+      ],
+      "description": "Naturaleza catastral de la parcela: urbana, rústica, mixta o desconocida. No equivale a la clasificación urbanística del planeamiento."
+    },
+    "officialBuiltAreaM2": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Superficie construida total que figura en los datos oficiales del Catastro (m²); no equivale a superficie edificable urbanísticamente ni a edificabilidad remanente. Puede incluir distintos usos y construcciones."
     }
   }
 }
