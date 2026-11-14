@@ -10,8 +10,10 @@ El 14 de noviembre de 2026 se cruzaron en EPSG:25830 las geometrías de las [par
 | `6116204YJ2761E` | 179,46 | 99,9998 % |
 | `6116212YJ2761E` | 93,64 | 99,9735 % |
 
-Las cinco comparten `tipoca = 2` y `origen = MP2098A`. Las fichas municipales muestran el plano y tienen vacías las casillas de calificación, uso, plantas y edificabilidad. Varias parcelas cruzan polígonos con distintos valores de `altura`. Los cinco registros SUPS Plot 1.0 tienen estado `PARTIAL` y contienen `plotAreaM2`. Quedan pendientes la verificación del uso por parcela, la interpretación de la altura y el cálculo de la edificabilidad.
+Las cinco comparten `tipoca = 2` y `origen = MP2098A`. Las fichas municipales muestran el plano y tienen vacías las casillas de calificación, uso, plantas y edificabilidad. Varias parcelas cruzan polígonos con distintos valores de `altura`. Los cinco registros SUPS Cadastral Plot 1.0 tienen estado `PARTIAL` y contienen `plotAreaM2`. Quedan pendientes la verificación del uso por parcela, la interpretación de la altura y el cálculo de la edificabilidad.
 
-- [Registros SUPS Plot](sups-plots.json)
+- [Registros SUPS Plot](sups-cadastral-plots.json)
 - [Evidencias, consultas y enlaces a las fichas](evidencias.json)
 - [Fichas municipales originales](fichas-municipales.zip)
+
+> Nota de migración: los registros se almacenan como parcelas catastrales con `measuredAreaM2` (superficie geométrica), no como parcelas urbanísticas ni derechos edificatorios efectivos. El estado `PARTIAL` del antiguo modelo mixto no se traslada a la entidad catastral.
