@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "regulationId": "EXAMPLE-NZ-2",
+  "parameters": {
+    "maxFloors": {
+      "status": "CONDITIONAL",
+      "variants": [
+        {
+          "condition": "Anchura de calle inferior a 12 m",
+          "value": 3
+        },
+        {
+          "condition": "Anchura de calle igual o superior a 12 m",
+          "value": 4
+        }
+      ],
+      "originalText": "Ejemplo ficticio; no es normativa real."
+    }
+  }
+}
