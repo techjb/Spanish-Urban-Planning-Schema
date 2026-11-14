@@ -1,0 +1,77 @@
+{
+  "municipality": "Madrid",
+  "source": "https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3/query",
+  "domain": "CHARACTERISTIC_USE",
+  "mappings": [
+    {
+      "mappingId": "MADRID-USE-001",
+      "originalLabel": "RESIDENCIAL VIVIENDA COLECTIVA",
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-002",
+      "originalLabel": "DOTACIONAL DEPORTIVO PUBLICO BASICO",
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-003",
+      "originalLabel": "DOTACIONAL ZONAS VERDES BASICO",
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-004",
+      "originalLabel": "RESIDENCIAL VIVIENDA",
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "OTHER",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-005",
+      "originalLabel": "DOTACIONAL VIA PUBLICA SECUNDARIA LOCAL",
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-006",
+      "originalLabel": "DOTACIONAL ZONAS VERDES BARRIO BASICO",
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-007",
+      "originalLabel": "RESIDENCIAL VIVIENDA COLECTIVA LIBRE",
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-008",
+      "originalLabel": "DOTACIONAL EQUIPAMIENTO PUBLICO BIENESTAR SOCIAL BASICO",
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SOCIAL",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-009",
+      "originalLabel": "SERVICIOS TERCIARIOS",
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "OTHER",
+      "status": "PROPOSED"
+    },
+    {
+      "mappingId": "MADRID-USE-010",
+      "originalLabel": "RESIDENCIAL VIVIENDA UNIFAMILIAR",
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "SINGLE_FAMILY",
+      "status": "PROPOSED"
+    }
+  ]
+}
