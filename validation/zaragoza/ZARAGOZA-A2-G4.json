@@ -35,17 +35,14 @@
       "status": "CONDITIONAL",
       "variants": [
         {
-          "condition": "Regla general sobre parcela neta",
+          "condition": "Regla general sobre parcela neta; si el plano de calificación establece otro índice, requiere resolución de la cartografía",
           "value": 1.5
-        },
-        {
-          "condition": "Si el plano de calificación establece otro índice",
-          "value": null
         }
       ],
       "sourceIds": [
         "4.2.5"
-      ]
+      ],
+      "originalText": "No resolver automáticamente cuando el plano de calificación establezca otro índice."
     },
     "maxHeightM": {
       "status": "UNKNOWN",
