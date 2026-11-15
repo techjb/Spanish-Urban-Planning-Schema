@@ -1,0 +1,25 @@
+{
+  "layer": "urbanismo:Clasificaciones",
+  "field": "clasificacion",
+  "conditions": {"tipo": "CLAS", "clase": "P"},
+  "jurisdiction": "ES-AR",
+  "catalog": "https://www.zaragoza.es/web/espacio-de-datos/servicio/catalogo/3040",
+  "catalogReferenceDate": "2024-02-24",
+  "evidence": "https://www.zaragoza.es/contenidos/urbanismo/pgouz/TR2024/tomo_10_estructura_clasificacion_tr_2024.pdf",
+  "evidenceSheet": "067",
+  "rules": {
+    "SU": ["URBAN", "CONSOLIDATED"],
+    "SU-NC": ["URBAN", "UNCONSOLIDATED"],
+    "SUZ": ["DEVELOPABLE", "NON_SECTORIZED"],
+    "SUZ (D)": ["DEVELOPABLE", "SECTORIZED"],
+    "SNU-E": ["NON_DEVELOPABLE", "PROTECTED"],
+    "SNU-G": ["NON_DEVELOPABLE", "COMMON"],
+    "SGU": ["URBAN", "UNSPECIFIED"],
+    "SGUZ": ["DEVELOPABLE", "UNSPECIFIED"],
+    "SGNU": ["NON_DEVELOPABLE", "UNSPECIFIED"]
+  },
+  "pending": {
+    "RIO": "El código de cauce no explicita la clase urbanística."
+  },
+  "nonUrbanQualificationPending": "La calificación de suelo no urbano identifica una categoría o protección; falta una equivalencia de uso característico documentada."
+}
