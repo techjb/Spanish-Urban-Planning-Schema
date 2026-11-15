@@ -77,6 +77,7 @@
             "NON_SECTORIZED",
             "COMMON",
             "PROTECTED",
+            "UNSPECIFIED",
             "OTHER",
             "UNKNOWN"
           ]
@@ -149,6 +150,18 @@
         },
         "originalUse": {
           "type": "string"
+        },
+        "provenance": {
+          "type": "object",
+          "description": "Procedencia del dato utilizado para normalizar el uso.",
+          "additionalProperties": false,
+          "required": ["sourceField", "originalCode", "basis"],
+          "properties": {
+            "sourceField": {"type": "string", "minLength": 1},
+            "originalCode": {"type": "string", "minLength": 1},
+            "planningInstrument": {"type": "string", "minLength": 1},
+            "basis": {"enum": ["PUBLISHED_USE", "ZONING_DESIGNATION"]}
+          }
         },
         "mappingStatus": {
           "enum": [
