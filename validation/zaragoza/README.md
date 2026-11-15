@@ -1,5 +1,40 @@
 # Zaragoza — first real-world SUPS validation (draft)
 
+## Versión con la propuesta para el conflicto `SU | SNU-E`
+
+`20261115T154949Z-741cbd762a5b7ab1` aplica la propuesta cartográfica
+descrita abajo. Sustituye una geometría contradictoria por dos
+registros SUPS, ambos vinculados al área original y a las tres filas WFS.
+La intersección con las claves municipales de protección se publica
+como `NON_DEVELOPABLE / PROTECTED` con estado `PROPOSED`. El recorte
+restante conserva `UNKNOWN / REQUIRES_REVIEW`. Se exportan 683 áreas de
+clasificación, 663 verificadas, una propuesta y 19 sin clasificación
+asignada, incluidos los 18 cauces. Las dos capas de calificación de
+uso son idénticas a las de la versión anterior.
+
+Publicación verificada en
+`s3://goolzoom-sups-data/50297 - Zaragoza/20261115T154949Z-741cbd762a5b7ab1/`.
+Los seis objetos recuperados de S3 coincidieron byte a byte con la
+versión validada.
+
+Por superficie de la huella municipal, la auditoría distingue
+54,408970 % con clasificación verificada, 45,108807 % con
+clasificación propuesta y 0,482223 % con clasificación sin asignar.
+
+Regenera esta variante con el archivo de fuentes extraído y la opción
+`--apply-conflict-proposal`:
+
+```text
+python validation/zaragoza/generate_municipal_zoning.py work/classification work/urban work/non-urban work/regional-contrast.json work/releases --apply-conflict-proposal
+python validation/zaragoza/check_municipal_zoning.py work/releases/20261115T154949Z-741cbd762a5b7ab1
+```
+
+La opción comprueba la huella y las claves de la geometría original.
+Si cambia el conflicto, la ejecución se detiene para revisar la
+evidencia. El manifiesto identifica las dos áreas derivadas y la
+auditoría conserva el desglose de la huella verificada, propuesta y
+pendiente.
+
 ## Versión con fuentes principales municipales
 
 `20261115T154949Z-366d1a0454a5cff2` usa las capas del Ayuntamiento de
@@ -38,6 +73,43 @@ verificada y el 45,59 % queda pendiente. El SIUa identifica como no
 urbanizable el 97,91 % de la geometría municipal con claves
 contradictorias. El contraste mantiene visibles ambas fuentes y la
 geometría queda pendiente en la capa municipal.
+
+### Investigación de la geometría `SU | SNU-E`
+
+Las tres filas WFS comparten la misma geometría canónica, 39 anillos
+interiores y una superficie declarada de 440.677.203,93 m². Las cinco
+consultas puntuales WMS `GetFeatureInfo` a `Plano_Clasificacion` repiten
+las tres claves de clasificación (`SU`, `SNU-E`, `SNU-E`) y devuelven
+además la calificación no urbana local. El WMS mantiene el conflicto.
+
+| Centro de consulta (longitud, latitud) | Calificación devuelta |
+|---|---|
+| -0,98438000; 41,60454000 | `SNU-EN-SE` |
+| -1,12495189; 41,65188473 | `SNU-EP-S` |
+| -1,06221790; 41,70216617 | `SNU-EP-R` |
+| -1,04208385; 41,66061294 | `SNU-ES-D` |
+| -0,80703509; 41,52251265 | `SNU-G-VT` |
+
+La unión de la calificación no urbana municipal cubre el 99,819591 %
+de la geometría contradictoria. Las claves explícitas de protección
+cubren el 99,733994 %, y el 97,640085 % de la geometría tiene tanto
+calificación municipal de protección como clasificación no urbanizable
+en el SIUa. `SNU-G-VT` cubre el 0,085597 %. El resto de la huella queda
+fuera de la propuesta, incluidas las superficies sin calificación
+municipal. El cálculo usa superficies de intersección en CRS84 y las
+proporciones se refieren a la geometría contradictoria.
+
+La [leyenda de clasificación del PGOUZ, hoja 067](https://www.zaragoza.es/contenidos/urbanismo/pgouz/TR2024/tomo_10_estructura_clasificacion_tr_2024.pdf)
+distingue las categorías de protección especial de las genéricas.
+La salida de diagnóstico propone `NON_DEVELOPABLE / PROTECTED` solo
+en la huella con evidencia municipal de protección. El WMS continúa
+publicando la clasificación contradictoria, así que la propuesta
+conserva el estado `PROPOSED` y está pendiente de una corrección o
+identificación inequívoca en el planeamiento.
+
+```text
+python validation/zaragoza/audit_classification_conflict.py work/releases/20261115T154949Z-366d1a0454a5cff2 work/classification-conflict
+```
 
 El catálogo municipal de clasificación indica el 24 de febrero de
 2024 para la ficha de datos asociada al WMS. El portal del PGOUZ
