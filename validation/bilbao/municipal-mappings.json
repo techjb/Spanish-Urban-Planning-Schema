@@ -1,0 +1,554 @@
+{
+  "municipalityCode": "48020",
+  "source": "Diputación Foral de Bizkaia, Plangintza_Planeamiento",
+  "sourceCatalog": {
+    "municipal": {
+      "role": "Normas y planos del PGOU, y aviso de nulidad parcial. GeoBilbao y el catálogo municipal no proporcionaron una descarga vectorial urbanística municipal completa verificable en esta revisión.",
+      "reference": "PGOU 2022, publicación municipal actualizada a febrero de 2023, y aviso de nulidad de 2024",
+      "url": "https://www.bilbao.eus/cs/ContentServer?c=Page&cid=1279216046646&language=es&pagename=Bilbaonet%2FPage%2FBIO_Listado"
+    },
+    "provincial": {
+      "role": "Geometrías y atributos originales de las 41 capas poligonales. Tres capas de clasificación sustentan el cruce con los ámbitos; la capa de suspensión impide una asignación no respaldada.",
+      "reference": "Servicio vivo; fecha de corte y expediente por polígono no publicados. Fecha y huellas de la copia en capture.",
+      "url": "https://www.opendatabizkaia.eus/es/catalogo/planeamiento-urbanistico",
+      "attribution": "Bizkaiko Foru Aldundia – Diputación Foral de Bizkaia",
+      "reuse": "https://www.bizkaia.eus/es/inspirebizkaia"
+    },
+    "regional": {
+      "role": "Revisado como alternativa. Inventario de estructura general, clasificación y calificación territorial, con corte anual; no se usa para asignar usos pormenorizados ni resolver la nulidad.",
+      "reference": "Ficha de cartografía actualizada el 03/06/2024",
+      "url": "https://www.geo.euskadi.eus/udalplan-cartografia-del-planeamiento-municipal-en-el-pais-vasco/webgeo00-dataset/es/"
+    }
+  },
+  "scope": "Solo Municipio = 'BILBAO'. Condiciones exactas por capa y campo. No hay campo de expediente en las capas forales; las reglas no resuelven vigencia, suspensión ni normativa de desarrollo.",
+  "reference": {
+    "instrument": "PGOU Bilbao, expediente 2018-064662",
+    "approval": "2022-03-31",
+    "municipalReference": "2023-02",
+    "articles": "Arts. 28–36, 44–45 y 48 del PGOU y leyendas de las capas forales",
+    "url": "https://www.bilbao.eus/pgou2022/1_NORMAS_URBANISTICAS_GENERALES_Y_DISTRITOS/Doc_2_1_NN_UU_Generales.pdf"
+  },
+  "legalExceptions": {
+    "authority": "TSJPV, Sentencia 283/2024, procedimiento 433/2022, publicada en el BOB el 28/10/2024",
+    "applicableInstrument": "PGOU 1995 según el aviso municipal. La equivalencia del uso histórico requiere su plano y ordenanza.",
+    "source": "https://www.bilbao.eus/asesoriajuridica/resolucionesjudiciales/2024/240610%20SENTENCIA%20N%20283%20-%2024.pdf",
+    "field": "NombreAmbito",
+    "values": ["RE.02.22 (Rekalde-Larraskitu 27A)", "RE.02.23 (Rekalde-Larraskitu 29)"]
+  },
+  "useFallback": {
+    "7": [16, 17, 18, 19],
+    "8": [20, 21, 22, 23, 24, 25, 26, 27, 28],
+    "9": [29, 30, 31, 32, 33, 34, 35, 36]
+  },
+  "layers": {
+    "1": [
+      {
+        "id": "bilbao-dfb-1-1",
+        "when": {
+          "ClasificacionCA": "Urbano"
+        },
+        "value": {
+          "class": "URBAN",
+          "category": "UNSPECIFIED"
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": "bilbao-dfb-2-1",
+        "when": {
+          "ClasificacionCA": "Urbanizable"
+        },
+        "value": {
+          "class": "DEVELOPABLE",
+          "category": "UNSPECIFIED"
+        }
+      }
+    ],
+    "3": [
+      {
+        "id": "bilbao-dfb-3-1",
+        "when": {
+          "ClasificacionCA": "No Urbanizable"
+        },
+        "value": {
+          "class": "NON_DEVELOPABLE",
+          "category": "UNSPECIFIED"
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "bilbao-dfb-4-1",
+        "when": {
+          "ClasificacionCA": "Zona Suspendida"
+        },
+        "pending": "suspended_classification_requires_applicable_instrument"
+      }
+    ],
+    "6": [
+      {
+        "id": "bilbao-dfb-6-1",
+        "when": {
+          "UsoGlobalCA": "Residencial"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "7": [
+      {
+        "id": "bilbao-dfb-7-1",
+        "when": {
+          "UsoGlobalCA": "Actividades económicas"
+        },
+        "pending": "economic_activity_without_specific_use"
+      }
+    ],
+    "8": [
+      {
+        "id": "bilbao-dfb-8-1",
+        "when": {
+          "UsoGlobalCA": "Categorias no urbanizable"
+        },
+        "pending": "rural_categories_without_specific_use"
+      }
+    ],
+    "9": [
+      {
+        "id": "bilbao-dfb-9-1",
+        "when": {
+          "UsoGlobalCA": "Sistema general"
+        },
+        "pending": "general_system_without_specific_use"
+      }
+    ],
+    "10": [
+      {
+        "id": "bilbao-dfb-10-1",
+        "when": {
+          "UsoGlobalCA": "Suelo no urbano"
+        },
+        "pending": "suspended_land_without_verified_use"
+      }
+    ],
+    "12": [
+      {
+        "id": "bilbao-dfb-12-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Casco histórico con delimitacion de A.R.I"
+        },
+        "pending": "historic_area_designation_without_specific_use"
+      }
+    ],
+    "13": [
+      {
+        "id": "bilbao-dfb-13-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "14": [
+      {
+        "id": "bilbao-dfb-14-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >= 30 y =< 75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "15": [
+      {
+        "id": "bilbao-dfb-15-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad < 30 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "16": [
+      {
+        "id": "bilbao-dfb-16-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Industrial"
+        },
+        "value": {
+          "use": "INDUSTRIAL"
+        }
+      }
+    ],
+    "17": [],
+    "18": [
+      {
+        "id": "bilbao-dfb-18-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Terciario"
+        },
+        "value": {
+          "use": "TERTIARY"
+        }
+      }
+    ],
+    "19": [
+      {
+        "id": "bilbao-dfb-19-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comercial"
+        },
+        "value": {
+          "use": "COMMERCIAL"
+        }
+      }
+    ],
+    "20": [
+      {
+        "id": "bilbao-dfb-20-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Protección aguas superficiales"
+        },
+        "pending": "protection_designation_without_specific_use"
+      }
+    ],
+    "21": [
+      {
+        "id": "bilbao-dfb-21-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "no_published_key_for_extractive_area"
+      }
+    ],
+    "22": [
+      {
+        "id": "bilbao-dfb-22-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Núcleo rural"
+        },
+        "pending": "rural_settlement_without_specific_use"
+      }
+    ],
+    "23": [
+      {
+        "id": "bilbao-dfb-23-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "protection_designation_without_specific_use"
+      }
+    ],
+    "24": [
+      {
+        "id": "bilbao-dfb-24-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "no_published_key_for_rural_transition_area"
+      }
+    ],
+    "25": [
+      {
+        "id": "bilbao-dfb-25-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "no_published_key_for_strategic_agricultural_area"
+      }
+    ],
+    "26": [
+      {
+        "id": "bilbao-dfb-26-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "environmental_designation_without_specific_use"
+      }
+    ],
+    "27": [
+      {
+        "id": "bilbao-dfb-27-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "no_published_key_for_mountain_pasture"
+      }
+    ],
+    "28": [
+      {
+        "id": "bilbao-dfb-28-1",
+        "when": {
+          "CalificacionPormenorizadaCA": null
+        },
+        "pending": "no_published_key_for_forest_area"
+      }
+    ],
+    "29": [],
+    "30": [
+      {
+        "id": "bilbao-dfb-30-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comunicación ferroviaria"
+        },
+        "value": {
+          "use": "INFRASTRUCTURE",
+          "subtype": "TRANSPORT"
+        }
+      }
+    ],
+    "31": [
+      {
+        "id": "bilbao-dfb-31-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comunicación viaria"
+        },
+        "value": {
+          "use": "INFRASTRUCTURE",
+          "subtype": "TRANSPORT"
+        }
+      }
+    ],
+    "32": [
+      {
+        "id": "bilbao-dfb-32-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Espacios libres"
+        },
+        "value": {
+          "use": "GREEN_SPACE"
+        }
+      }
+    ],
+    "33": [
+      {
+        "id": "bilbao-dfb-33-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Equipamientos"
+        },
+        "value": {
+          "use": "FACILITIES"
+        }
+      }
+    ],
+    "34": [
+      {
+        "id": "bilbao-dfb-34-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Infraestructuras"
+        },
+        "value": {
+          "use": "INFRASTRUCTURE"
+        }
+      }
+    ],
+    "35": [],
+    "36": [
+      {
+        "id": "bilbao-dfb-36-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Cauces fluviales"
+        },
+        "pending": "watercourse_without_applicable_use"
+      }
+    ],
+    "37": [
+      {
+        "id": "bilbao-dfb-37-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Zona suspendida"
+        },
+        "pending": "suspended_land_without_verified_use"
+      }
+    ],
+    "39": [
+      {
+        "id": "bilbao-dfb-39-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-39-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >= 30 y =< 75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-39-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad < 30 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-39-4",
+        "when": {
+          "CalificacionPormenorizadaCA": "Casco histórico con delimitacion de A.R.I"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "40": [
+      {
+        "id": "bilbao-dfb-40-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comercial"
+        },
+        "value": {
+          "use": "COMMERCIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-40-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Industrial"
+        },
+        "value": {
+          "use": "INDUSTRIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-40-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Terciario"
+        },
+        "value": {
+          "use": "TERTIARY"
+        }
+      }
+    ],
+    "41": [
+      {
+        "id": "bilbao-dfb-41-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-41-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >= 30 y =< 75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-41-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad < 30 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "42": [
+      {
+        "id": "bilbao-dfb-42-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comercial"
+        },
+        "value": {
+          "use": "COMMERCIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-42-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Industrial"
+        },
+        "value": {
+          "use": "INDUSTRIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-42-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Terciario"
+        },
+        "value": {
+          "use": "TERTIARY"
+        }
+      }
+    ],
+    "43": [
+      {
+        "id": "bilbao-dfb-43-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-43-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad >= 30 y =< 75 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-43-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Vivienda densidad < 30 viv/ha"
+        },
+        "value": {
+          "use": "RESIDENTIAL"
+        }
+      }
+    ],
+    "44": [
+      {
+        "id": "bilbao-dfb-44-1",
+        "when": {
+          "CalificacionPormenorizadaCA": "Comercial"
+        },
+        "value": {
+          "use": "COMMERCIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-44-2",
+        "when": {
+          "CalificacionPormenorizadaCA": "Industrial"
+        },
+        "value": {
+          "use": "INDUSTRIAL"
+        }
+      },
+      {
+        "id": "bilbao-dfb-44-3",
+        "when": {
+          "CalificacionPormenorizadaCA": "Terciario"
+        },
+        "value": {
+          "use": "TERTIARY"
+        }
+      }
+    ]
+  }
+}
