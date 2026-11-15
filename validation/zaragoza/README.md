@@ -1,5 +1,50 @@
 # Zaragoza — first real-world SUPS validation (draft)
 
+## Usos pendientes en planeamiento recogido y planes parciales
+
+La auditoría `audit_development_plans.py` cruza los usos pendientes
+`PR` y `SUZ-PD` de la capa municipal con los ámbitos WFS de planeamiento
+recogido y de desarrollo. Utiliza las capas `PLA_1_Ambitos_recogido`
+(195 entidades) y `PLA_1_Ambitos_desarrollo` (312; solo ámbitos de tipo
+`SUZ` para el cruce), y enlaza `PLA_1_Instrumentos_ambito` (523) a través
+de `codigo_ambito`. Las respuestas íntegras se verifican con los recuentos
+WFS y la auditoría guarda sus URLs, fechas y SHA-256.
+
+| Clave | Zonas | Con ámbito inequívoco | Ámbitos distintos | Con enlace a planos en el inventario WFS |
+|---|---:|---:|---:|---:|
+| `PR` | 901 | 852 | 175 | 8 zonas |
+| `SUZ-PD` | 556 | 555 | 21 | 536 zonas |
+
+Se requiere al menos el 95 % de solape con un ámbito y un máximo del
+1 % de superficie cubierta por ámbitos competidores, mediante
+intersección y unión geométricas en CRS84. El inventario incluye el
+código de ámbito, los expedientes, las fechas registradas y los
+enlaces normativos y gráficos de cada instrumento cuando existen.
+El cruce determina el ámbito que hay que investigar. La calificación
+pormenorizada sigue pendiente de identificar para cada polígono.
+
+El ámbito `SUZ-89-03` (Arcosur) contiene 170 candidatas y `SUZ-89-04`
+(Valdespartera), 93. Se inspeccionaron los planos originales enlazados por
+el Ayuntamiento. El plano de zonificación 2 de Arcosur, página 4 del
+PDF, distingue vivienda colectiva, usos terciarios, equipamientos,
+infraestructuras y zonas verdes. La hoja O02 de Valdespartera, página 3
+del PDF, muestra la distribución por vecindarios. Las 12 páginas de
+Arcosur y las seis de Valdespartera contienen una imagen por página y
+carecen de texto extraíble y de georreferenciación PDF. Antes de
+normalizar usos por manzana se deben localizar o georreferenciar las
+hojas de calificación aplicables e incorporar sus modificaciones
+aprobadas. [Inventario municipal de planeamiento de segundo grado](https://www.zaragoza.es/sede/portal/urbanismo/planeamiento/fig-menor-rango)
+
+```text
+python validation/zaragoza/audit_development_plans.py work/releases/<version> work/planeamiento work/development-plan-audit.json
+```
+
+El directorio de capturas contiene un par
+`municipal-<capa>-hits.xml` y `municipal-<capa>-full.json` por cada
+capa indicada. Usa el OWS municipal con `GetFeature`, WFS 2.0.0,
+`typeNames=urbanismo:<capa>`, `resultType=hits` para el XML y
+`srsName=CRS:84&outputFormat=application%2Fjson` para el GeoJSON.
+
 ## Versión con la propuesta para el conflicto `SU | SNU-E`
 
 `20261115T154949Z-741cbd762a5b7ab1` aplica la propuesta cartográfica
