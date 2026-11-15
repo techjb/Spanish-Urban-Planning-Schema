@@ -23,7 +23,8 @@ def check(release):
             assert archive.testzip() is None
             archive.extractall(scratch)
         generate(scratch / "classification", scratch / "urban", scratch / "non-urban",
-                 scratch / REGIONAL_BASELINE, scratch / "replay")
+                 scratch / REGIONAL_BASELINE, scratch / "replay",
+                 "classificationConflictProposal" in manifest)
         replay = scratch / "replay" / manifest["version"]
         for name in names:
             assert (replay / name).read_bytes() == (release / name).read_bytes()
@@ -58,9 +59,15 @@ def check(release):
             raise AssertionError("Accepted incomplete municipal classification")
 
     classification = load(release / AUDIT)["classification"]
+    replacements = manifest.get("classificationConflictProposal", {})
     for area_id, duplicate in classification["duplicateGeometries"].items():
         if duplicate["conflictingAttributes"]:
-            assert manifest["areas"][area_id]["classification"]["class"] == "UNKNOWN"
+            if area_id in manifest["areas"]:
+                assert manifest["areas"][area_id]["classification"]["class"] == "UNKNOWN"
+            else:
+                assert classification["conflictProposal"]["areaId"] == area_id
+                assert manifest["areas"][replacements["proposed"]]["classification"]["mappingStatus"] == "PROPOSED"
+                assert manifest["areas"][replacements["residual"]]["classification"]["class"] == "UNKNOWN"
     print("Byte-identical archive replay; unknown key, conflicting duplicate and incomplete capture checked.")
 
 

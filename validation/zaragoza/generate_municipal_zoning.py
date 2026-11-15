@@ -10,6 +10,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 from shapely import STRtree, union_all
 from shapely.geometry import shape
 
+from audit_classification_conflict import CONFLICT_ID, derive
 from capture_zoning import INE, encode
 from generate_zoning import (
     AUDIT, DATASET, HERE, MANIFEST, MUNICIPAL_DATASET, NON_URBAN_DATASET, ROOT, S3,
@@ -110,7 +111,9 @@ def spatial_contrast(municipal, regional):
     municipal_union, regional_union = union_all(municipal_geoms), union_all(regional_geoms)
     common_area = municipal_union.intersection(regional_union).area
     verified_footprint = union_all([geom for record, geom in zip(municipal, municipal_geoms)
-                                    if record["landClassification"]["class"] != "UNKNOWN"])
+                                    if record["landClassification"]["mappingStatus"] == "VERIFIED"])
+    proposed_footprint = union_all([geom for record, geom in zip(municipal, municipal_geoms)
+                                   if record["landClassification"]["mappingStatus"] == "PROPOSED"])
     pending_footprint = union_all([geom for record, geom in zip(municipal, municipal_geoms)
                                    if record["landClassification"]["class"] == "UNKNOWN"])
     details = {}
@@ -135,7 +138,7 @@ def spatial_contrast(municipal, regional):
     matrix = defaultdict(dict)
     for (municipal_class, regional_class), parts in class_pairs.items():
         matrix[municipal_class][regional_class] = round(100 * union_all(parts).area / common_area, 6)
-    return {"method": "CRS84 planar polygon intersections; union before area by class pair. "
+    result = {"method": "CRS84 planar polygon intersections; union before area by class pair. "
                       "Class pairs can overlap when source classes overlap.",
             "municipalFootprintCoveredPct": round(100 * common_area / municipal_union.area, 6),
             "regionalFootprintCoveredPct": round(100 * common_area / regional_union.area, 6),
@@ -148,9 +151,56 @@ def spatial_contrast(municipal, regional):
             "polygonsWithDifferentKnownClassAboveOnePct": sum(
                 (item["differentKnownClass"] or 0) > 0.01 for item in details.values()),
             "areas": details}
+    if not proposed_footprint.is_empty:
+        result["municipalFootprintProposedPct"] = round(100 * proposed_footprint.area / municipal_union.area, 6)
+    return result
 
 
-def generate(class_dir, urban_dir, non_urban_dir, regional_path, output):
+def apply_conflict_proposal(records, inventory, audit, non_urban_raw, regional_raw, validator):
+    conflict = next((record for record in records if record["areaId"] == CONFLICT_ID), None)
+    if conflict is None:
+        raise ValueError("Expected conflict geometry changed; review evidence before applying the proposal")
+    evidence, protected, residual = derive(conflict, non_urban_raw, regional_raw)
+    if not protected["coordinates"] or not residual["coordinates"]:
+        raise ValueError("Conflict split no longer has both expected pieces")
+    replacements = {}
+    pieces = (
+        ("proposed", protected, {"class": "NON_DEVELOPABLE", "category": "PROTECTED",
+                                "mappingStatus": "PROPOSED", "mappingId": f"{INE}:municipal-classification:conflict-proposal"},
+         {}),
+        ("residual", residual, {"class": "UNKNOWN", "mappingStatus": "REQUIRES_REVIEW"},
+         {"classification": "Fuera de la huella con respaldo municipal de protección."}),
+    )
+    del inventory["areas"][CONFLICT_ID]
+    del audit["pending"][CONFLICT_ID]
+    records.remove(conflict)
+    for label, cut, mapping_fields, pending in pieces:
+        geom, repair = geometry({"geometry": cut})
+        if repair:
+            raise ValueError(f"Conflict split required an unexpected geometry repair: {label}")
+        fingerprint = digest(encode(geom))
+        area_id = f"{INE}:IDEZar:{CLASS_LAYER}:{fingerprint}"
+        if area_id in inventory["areas"]:
+            raise ValueError("Conflict split duplicates an existing municipal area")
+        land = {"originalCode": conflict["landClassification"]["originalCode"],
+                "jurisdiction": conflict["landClassification"]["jurisdiction"], **mapping_fields}
+        record = {**conflict, "areaId": area_id, "geometry": geom, "landClassification": land,
+                  "sourceEvidence": {**conflict["sourceEvidence"], "parentAreaId": CONFLICT_ID,
+                                     "classificationConflictAudit": "zoning-audit.json"}}
+        validator.validate(json.loads(encode(record)))
+        records.append(record)
+        inventory["areas"][area_id] = {"geometry": fingerprint, "classification": land,
+                                       "use": None, "pending": pending}
+        if pending:
+            audit["pending"][area_id] = pending
+        replacements[label] = area_id
+    records.sort(key=lambda record: record["areaId"])
+    inventory["counts"].update(exported=len(records), proposedAreas=1, derivedAdditionalAreas=1,
+                               pendingAreas=len(audit["pending"]))
+    audit["conflictProposal"] = dict(evidence, replacements=replacements, mappingStatus="PROPOSED")
+
+
+def generate(class_dir, urban_dir, non_urban_dir, regional_path, output, apply_proposal=False):
     spec = load(CLASS_CATALOG)
     class_meta, class_features = read_snapshot(class_dir, CLASS_LAYER)
     non_urban_meta, non_urban_features = read_snapshot(non_urban_dir, NON_URBAN_LAYER)
@@ -170,6 +220,9 @@ def generate(class_dir, urban_dir, non_urban_dir, regional_path, output):
     regional = load(regional_path)
     if not regional or any(not row["areaId"].startswith(f"{INE}:SIUa:") for row in regional):
         raise ValueError("Expected the published Zaragoza SIUa dataset for comparison")
+    if apply_proposal:
+        apply_conflict_proposal(class_records, class_inv, class_audit,
+                                (non_urban_dir / "features.json").read_bytes(), regional_data, validator)
     contrast = spatial_contrast(class_records, regional)
     contrast["baselineSha256"] = digest(regional_data)
     folders = {"classification": (class_dir, class_meta), "urban": (urban_dir, urban.metadata),
@@ -203,6 +256,8 @@ def generate(class_dir, urban_dir, non_urban_dir, regional_path, output):
                     municipalZoningAreas=dict(urban_inv, file=MUNICIPAL_DATASET),
                     nonUrbanZoningAreas=dict(non_urban_inv, file=NON_URBAN_DATASET),
                     objects={name: {"bytes": len(body), "sha256": digest(body)} for name, body in objects.items()})
+    if apply_proposal:
+        manifest["classificationConflictProposal"] = class_audit["conflictProposal"]["replacements"]
     for name, body in objects.items():
         if name != SOURCES:
             (directory / name).write_bytes(body)
@@ -216,5 +271,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     for arg in ("classification", "urban", "non_urban", "regional_baseline", "output"):
         parser.add_argument(arg, type=Path)
+    parser.add_argument("--apply-conflict-proposal", action="store_true")
     args = parser.parse_args()
-    generate(args.classification, args.urban, args.non_urban, args.regional_baseline, args.output)
+    generate(args.classification, args.urban, args.non_urban, args.regional_baseline, args.output,
+             args.apply_conflict_proposal)
