@@ -17,6 +17,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro residencial"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -35,6 +39,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro comercial"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -59,6 +67,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro alojamiento"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -73,6 +85,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro terciario"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -91,6 +107,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro industrial"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -131,6 +151,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro equipamiento"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -159,6 +183,10 @@
         {
           "id": "OTHER",
           "labelEs": "Otro espacio libre"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Subtipo sin especificar"
         }
       ]
     },
@@ -211,6 +239,9 @@
     "Separar uso característico de zona y usos jurídicamente permitidos.",
     "Conservar código y denominación originales.",
     "No equiparar automáticamente uso terciario a comercial ni industrial a logístico.",
-    "Cuando haya varios usos sin predominio verificable usar MIXED o UNKNOWN."
+    "Cuando haya varios usos sin predominio verificable usar MIXED o UNKNOWN.",
+    "Usar UNSPECIFIED, cuando esté disponible, si el uso se conoce y la fuente no permite determinar el subtipo.",
+    "Usar OTHER para un subtipo municipal identificado que el vocabulario SUPS no recoge de forma específica.",
+    "Usar UNKNOWN cuando la fuente no permite determinar el uso SUPS."
   ]
 }

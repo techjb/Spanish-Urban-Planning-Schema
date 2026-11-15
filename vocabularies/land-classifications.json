@@ -11,6 +11,10 @@
           "labelEs": "Consolidado"
         },
         {
+          "id": "UNSPECIFIED",
+          "labelEs": "Categoría sin especificar"
+        },
+        {
           "id": "UNCONSOLIDATED",
           "labelEs": "No consolidado"
         },
@@ -29,6 +33,10 @@
           "labelEs": "Sectorizado o delimitado"
         },
         {
+          "id": "UNSPECIFIED",
+          "labelEs": "Categoría sin especificar"
+        },
+        {
           "id": "NON_SECTORIZED",
           "labelEs": "No sectorizado o no delimitado"
         },
@@ -45,6 +53,10 @@
         {
           "id": "COMMON",
           "labelEs": "Común"
+        },
+        {
+          "id": "UNSPECIFIED",
+          "labelEs": "Categoría sin especificar"
         },
         {
           "id": "PROTECTED",
@@ -79,6 +91,7 @@
   ],
   "mappingRules": [
     "Preservar siempre los valores originales y la jurisdicción.",
+    "Usar UNSPECIFIED cuando se conoce la clase y la fuente no permite determinar la categoría.",
     "No inferir edificabilidad ni condición de solar a partir de la clase.",
     "Si no existe equivalencia legal inequívoca usar OTHER/UNKNOWN y revisión humana.",
     "No confundir naturaleza catastral URBAN/RUSTIC con clasificación urbanística."

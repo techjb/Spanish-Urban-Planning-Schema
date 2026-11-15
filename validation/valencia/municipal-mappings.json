@@ -1,0 +1,1332 @@
+{
+  "municipalityCode": "46250",
+  "sourceLayer": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/231",
+  "rules": [
+    {
+      "mappingId": "46250-231-califi-CHP-origen_PGOU",
+      "sourceField": "califi",
+      "originalCode": "CHP",
+      "conditions": {
+        "origen": "PGOU",
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035#search=Art%C3%ADculo%206.6"
+    },
+    {
+      "mappingId": "46250-231-califi-CV-origen_PE2020",
+      "sourceField": "califi",
+      "originalCode": "CV",
+      "conditions": {
+        "origen": "PE2020",
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271200/guillem_de_castro_101_firmada.pdf/8f9452a0-0b53-f902-24b6-e1f115cb45f7"
+    },
+    {
+      "mappingId": "46250-231-califi-EC",
+      "sourceField": "califi",
+      "originalCode": "EC",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/264010/A_00001_20230427_0945_0_firmadoweb.pdf/b4bd161b-695b-2716-080c-652ab59a4fa0?t=1686818032040"
+    },
+    {
+      "mappingId": "46250-231-califi-EDA-origen_PGOU",
+      "sourceField": "califi",
+      "originalCode": "EDA",
+      "conditions": {
+        "origen": "PGOU",
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-EL",
+      "sourceField": "califi",
+      "originalCode": "EL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/BC94A381E8155FB1C1258AD8002BD607/%24FILE/PUBLICACI%C3%93N%20ANUNCIO%20BOP.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-califi-ENS-origen_PGOU",
+      "sourceField": "califi",
+      "originalCode": "ENS",
+      "conditions": {
+        "origen": "PGOU",
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "MULTIFAMILY",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GEC",
+      "sourceField": "califi",
+      "originalCode": "GEC",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GEL",
+      "sourceField": "califi",
+      "originalCode": "GEL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GFS",
+      "sourceField": "califi",
+      "originalCode": "GFS",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GIS",
+      "sourceField": "califi",
+      "originalCode": "GIS",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "UTILITIES",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GLT",
+      "sourceField": "califi",
+      "originalCode": "GLT",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "OTHER",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035#search=Art%C3%ADculo%206.69"
+    },
+    {
+      "mappingId": "46250-231-califi-GRV",
+      "sourceField": "califi",
+      "originalCode": "GRV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GSP",
+      "sourceField": "califi",
+      "originalCode": "GSP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GSR",
+      "sourceField": "califi",
+      "originalCode": "GSR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-GTR",
+      "sourceField": "califi",
+      "originalCode": "GTR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-IND",
+      "sourceField": "califi",
+      "originalCode": "IND",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INDUSTRIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-NPI",
+      "sourceField": "califi",
+      "originalCode": "NPI",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INDUSTRIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-NPR",
+      "sourceField": "califi",
+      "originalCode": "NPR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-NPT",
+      "sourceField": "califi",
+      "originalCode": "NPT",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-PA-clase_SNU-origen_PGOU",
+      "sourceField": "califi",
+      "originalCode": "PA",
+      "conditions": {
+        "origen": "PGOU",
+        "clase": "SNU",
+        "uso": ""
+      },
+      "normalizedUse": "AGRICULTURAL",
+      "normalizedSubtype": "FARMING",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035#search=Art%C3%ADculo%204.10"
+    },
+    {
+      "mappingId": "46250-231-califi-PCA",
+      "sourceField": "califi",
+      "originalCode": "PCA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PCF",
+      "sourceField": "califi",
+      "originalCode": "PCF",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PCV",
+      "sourceField": "califi",
+      "originalCode": "PCV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PCVP",
+      "sourceField": "califi",
+      "originalCode": "PCVP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PCVT",
+      "sourceField": "califi",
+      "originalCode": "PCVT",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PJL",
+      "sourceField": "califi",
+      "originalCode": "PJL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-califi-PM-clase_SNU-origen_PGOU",
+      "sourceField": "califi",
+      "originalCode": "PM",
+      "conditions": {
+        "origen": "PGOU",
+        "clase": "SNU",
+        "uso": ""
+      },
+      "normalizedUse": "OTHER",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035#search=Art%C3%ADculo%204.9"
+    },
+    {
+      "mappingId": "46250-231-califi-PQA",
+      "sourceField": "califi",
+      "originalCode": "PQA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "ADMINISTRATIVE",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PQD",
+      "sourceField": "califi",
+      "originalCode": "PQD",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PQE",
+      "sourceField": "califi",
+      "originalCode": "PQE",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PQL",
+      "sourceField": "califi",
+      "originalCode": "PQL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/19127A86DB23CD45C1257DBD0043EAAB/%24FILE/P3%20ZONAS%20PRIMARIAS%20H1_firmado.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-califi-PQM",
+      "sourceField": "califi",
+      "originalCode": "PQM",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PQR",
+      "sourceField": "califi",
+      "originalCode": "PQR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PQS",
+      "sourceField": "califi",
+      "originalCode": "PQS",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PRI",
+      "sourceField": "califi",
+      "originalCode": "PRI",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INDUSTRIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-PRR",
+      "sourceField": "califi",
+      "originalCode": "PRR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-PRT",
+      "sourceField": "califi",
+      "originalCode": "PRT",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-PRV",
+      "sourceField": "califi",
+      "originalCode": "PRV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-califi-PTR",
+      "sourceField": "califi",
+      "originalCode": "PTR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/19127A86DB23CD45C1257DBD0043EAAB/%24FILE/P3%20ZONAS%20PRIMARIAS%20H1_firmado.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-califi-PVA",
+      "sourceField": "califi",
+      "originalCode": "PVA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PVJ",
+      "sourceField": "califi",
+      "originalCode": "PVJ",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-PVP",
+      "sourceField": "califi",
+      "originalCode": "PVP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "PARK",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-RV",
+      "sourceField": "califi",
+      "originalCode": "RV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-SAL",
+      "sourceField": "califi",
+      "originalCode": "SAL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-califi-SCA",
+      "sourceField": "califi",
+      "originalCode": "SCA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SCF",
+      "sourceField": "califi",
+      "originalCode": "SCF",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SCV",
+      "sourceField": "califi",
+      "originalCode": "SCV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SCVP",
+      "sourceField": "califi",
+      "originalCode": "SCVP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SCVT",
+      "sourceField": "califi",
+      "originalCode": "SCVT",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SED",
+      "sourceField": "califi",
+      "originalCode": "SED",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "EDUCATION",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-califi-SID",
+      "sourceField": "califi",
+      "originalCode": "SID",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "UTILITIES",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-califi-SJL",
+      "sourceField": "califi",
+      "originalCode": "SJL",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-califi-SP",
+      "sourceField": "califi",
+      "originalCode": "SP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/cas/actualidad/-/content/ampliaci%C3%B3n-centre-cruz-roja"
+    },
+    {
+      "mappingId": "46250-231-califi-SQA",
+      "sourceField": "califi",
+      "originalCode": "SQA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "ADMINISTRATIVE",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SQD",
+      "sourceField": "califi",
+      "originalCode": "SQD",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SQE",
+      "sourceField": "califi",
+      "originalCode": "SQE",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SQM",
+      "sourceField": "califi",
+      "originalCode": "SQM",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SQR",
+      "sourceField": "califi",
+      "originalCode": "SQR",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SQS",
+      "sourceField": "califi",
+      "originalCode": "SQS",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SRD",
+      "sourceField": "califi",
+      "originalCode": "SRD",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-califi-SRV",
+      "sourceField": "califi",
+      "originalCode": "SRV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-califi-SVA",
+      "sourceField": "califi",
+      "originalCode": "SVA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SVJ",
+      "sourceField": "califi",
+      "originalCode": "SVJ",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-SVP",
+      "sourceField": "califi",
+      "originalCode": "SVP",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "PARK",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-califi-TER",
+      "sourceField": "califi",
+      "originalCode": "TER",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-UFA",
+      "sourceField": "califi",
+      "originalCode": "UFA",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "SINGLE_FAMILY",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-califi-ZV",
+      "sourceField": "califi",
+      "originalCode": "ZV",
+      "conditions": {
+        "uso": ""
+      },
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/264010/A_00001_20230427_0945_0_firmadoweb.pdf/b4bd161b-695b-2716-080c-652ab59a4fa0?t=1686818032040"
+    },
+    {
+      "mappingId": "46250-231-clase-SNU",
+      "sourceField": "clase",
+      "originalCode": "SNU",
+      "conditions": {},
+      "normalizedClass": "NON_DEVELOPABLE",
+      "normalizedCategory": "UNSPECIFIED",
+      "originalLabel": "Suelo no urbanizable",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/293C3352E4C33D49C1257FD1002D5211/%24FILE/O.1-Calificacion%20del%20Suelo%20Serie%20B_firmado.pdf"
+    },
+    {
+      "mappingId": "46250-231-clase-SU",
+      "sourceField": "clase",
+      "originalCode": "SU",
+      "conditions": {},
+      "normalizedClass": "URBAN",
+      "normalizedCategory": "UNSPECIFIED",
+      "originalLabel": "Suelo urbano",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/293C3352E4C33D49C1257FD1002D5211/%24FILE/O.1-Calificacion%20del%20Suelo%20Serie%20B_firmado.pdf"
+    },
+    {
+      "mappingId": "46250-231-clase-SUNP",
+      "sourceField": "clase",
+      "originalCode": "SUNP",
+      "conditions": {},
+      "normalizedClass": "DEVELOPABLE",
+      "normalizedCategory": "UNSPECIFIED",
+      "originalLabel": "Suelo urbanizable no programado",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/293C3352E4C33D49C1257FD1002D5211/%24FILE/O.1-Calificacion%20del%20Suelo%20Serie%20B_firmado.pdf"
+    },
+    {
+      "mappingId": "46250-231-clase-SUP",
+      "sourceField": "clase",
+      "originalCode": "SUP",
+      "conditions": {},
+      "normalizedClass": "DEVELOPABLE",
+      "normalizedCategory": "UNSPECIFIED",
+      "originalLabel": "Suelo urbanizable programado",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/293C3352E4C33D49C1257FD1002D5211/%24FILE/O.1-Calificacion%20del%20Suelo%20Serie%20B_firmado.pdf"
+    },
+    {
+      "mappingId": "46250-231-uso-DED",
+      "sourceField": "uso",
+      "originalCode": "DED",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "EDUCATION",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-DEL",
+      "sourceField": "uso",
+      "originalCode": "DEL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-DRE",
+      "sourceField": "uso",
+      "originalCode": "DRE",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-EC",
+      "sourceField": "uso",
+      "originalCode": "EC",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/264010/A_00001_20230427_0945_0_firmadoweb.pdf/b4bd161b-695b-2716-080c-652ab59a4fa0?t=1686818032040"
+    },
+    {
+      "mappingId": "46250-231-uso-EL",
+      "sourceField": "uso",
+      "originalCode": "EL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/BC94A381E8155FB1C1258AD8002BD607/%24FILE/PUBLICACI%C3%93N%20ANUNCIO%20BOP.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-GIS",
+      "sourceField": "uso",
+      "originalCode": "GIS",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "UTILITIES",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-GTR",
+      "sourceField": "uso",
+      "originalCode": "GTR",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-IND",
+      "sourceField": "uso",
+      "originalCode": "IND",
+      "conditions": {},
+      "normalizedUse": "INDUSTRIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-PCA",
+      "sourceField": "uso",
+      "originalCode": "PCA",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PCF",
+      "sourceField": "uso",
+      "originalCode": "PCF",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PCV",
+      "sourceField": "uso",
+      "originalCode": "PCV",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PCVP",
+      "sourceField": "uso",
+      "originalCode": "PCVP",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PCVT",
+      "sourceField": "uso",
+      "originalCode": "PCVT",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PJL",
+      "sourceField": "uso",
+      "originalCode": "PJL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-PQA",
+      "sourceField": "uso",
+      "originalCode": "PQA",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "ADMINISTRATIVE",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PQD",
+      "sourceField": "uso",
+      "originalCode": "PQD",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PQE",
+      "sourceField": "uso",
+      "originalCode": "PQE",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PQL",
+      "sourceField": "uso",
+      "originalCode": "PQL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/19127A86DB23CD45C1257DBD0043EAAB/%24FILE/P3%20ZONAS%20PRIMARIAS%20H1_firmado.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-uso-PQM",
+      "sourceField": "uso",
+      "originalCode": "PQM",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PQR",
+      "sourceField": "uso",
+      "originalCode": "PQR",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PQS",
+      "sourceField": "uso",
+      "originalCode": "PQS",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PRV",
+      "sourceField": "uso",
+      "originalCode": "PRV",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-uso-PTR",
+      "sourceField": "uso",
+      "originalCode": "PTR",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/19127A86DB23CD45C1257DBD0043EAAB/%24FILE/P3%20ZONAS%20PRIMARIAS%20H1_firmado.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-uso-PVA",
+      "sourceField": "uso",
+      "originalCode": "PVA",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PVJ",
+      "sourceField": "uso",
+      "originalCode": "PVJ",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-PVP",
+      "sourceField": "uso",
+      "originalCode": "PVP",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "PARK",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-R",
+      "sourceField": "uso",
+      "originalCode": "R",
+      "conditions": {},
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/629631/10.%2BNormas%2BUrban%EF%BF%BDsticas.%2B%28Transcripci%EF%BF%BDn%29.pdf/ba78c368-ab86-c719-b9c4-e504111b3863"
+    },
+    {
+      "mappingId": "46250-231-uso-RV",
+      "sourceField": "uso",
+      "originalCode": "RV",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-SAL",
+      "sourceField": "uso",
+      "originalCode": "SAL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-SCA",
+      "sourceField": "uso",
+      "originalCode": "SCA",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SCF",
+      "sourceField": "uso",
+      "originalCode": "SCF",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SCV",
+      "sourceField": "uso",
+      "originalCode": "SCV",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SCVP",
+      "sourceField": "uso",
+      "originalCode": "SCVP",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SCVT",
+      "sourceField": "uso",
+      "originalCode": "SCVT",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SED",
+      "sourceField": "uso",
+      "originalCode": "SED",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "EDUCATION",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-uso-SEL",
+      "sourceField": "uso",
+      "originalCode": "SEL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/BC94A381E8155FB1C1258AD8002BD607/%24FILE/PUBLICACI%C3%93N%20ANUNCIO%20BOP.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-SID",
+      "sourceField": "uso",
+      "originalCode": "SID",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "UTILITIES",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-SJL",
+      "sourceField": "uso",
+      "originalCode": "SJL",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-uso-SP",
+      "sourceField": "uso",
+      "originalCode": "SP",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/cas/actualidad/-/content/ampliaci%C3%B3n-centre-cruz-roja"
+    },
+    {
+      "mappingId": "46250-231-uso-SQA",
+      "sourceField": "uso",
+      "originalCode": "SQA",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "ADMINISTRATIVE",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SQD",
+      "sourceField": "uso",
+      "originalCode": "SQD",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SQE",
+      "sourceField": "uso",
+      "originalCode": "SQE",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SQE-origen_PE2020",
+      "sourceField": "uso",
+      "originalCode": "SQE",
+      "conditions": {
+        "origen": "PE2020"
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/C4B888C524B81ABBC1258B66002156CF/%24FILE/1.5.%20ESTUDI%20DE%20VIABILITAT%20ECON%C3%92MICA%20I%20MEM%C3%92RIA%20DE%20SOSTENIBILITAT%20ECON%C3%92MICA.%20Juny%2024.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-uso-SQM",
+      "sourceField": "uso",
+      "originalCode": "SQM",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SQM-origen_PE2020",
+      "sourceField": "uso",
+      "originalCode": "SQM",
+      "conditions": {
+        "origen": "PE2020"
+      },
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/C4B888C524B81ABBC1258B66002156CF/%24FILE/1.5.%20ESTUDI%20DE%20VIABILITAT%20ECON%C3%92MICA%20I%20MEM%C3%92RIA%20DE%20SOSTENIBILITAT%20ECON%C3%92MICA.%20Juny%2024.pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-uso-SQR",
+      "sourceField": "uso",
+      "originalCode": "SQR",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SQS",
+      "sourceField": "uso",
+      "originalCode": "SQS",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SRD",
+      "sourceField": "uso",
+      "originalCode": "SRD",
+      "conditions": {},
+      "normalizedUse": "FACILITIES",
+      "normalizedSubtype": "SPORTS",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/BD5C878410F910F4C1258CB600261B50/%24FILE/398-2024%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=2"
+    },
+    {
+      "mappingId": "46250-231-uso-SRV",
+      "sourceField": "uso",
+      "originalCode": "SRV",
+      "conditions": {},
+      "normalizedUse": "INFRASTRUCTURE",
+      "normalizedSubtype": "TRANSPORT",
+      "evidence": "https://www.valencia.es/ayuntamiento/urbanismo2.nsf/0/79E44B6EA572C8AFC1258B950029F996/%24FILE/36-2023%20Anuncio%20BOP%20Aprobaci%C3%B3n%20Definitiva.pdf?OpenElement=&lang=1"
+    },
+    {
+      "mappingId": "46250-231-uso-SVA",
+      "sourceField": "uso",
+      "originalCode": "SVA",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SVJ",
+      "sourceField": "uso",
+      "originalCode": "SVJ",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-SVP",
+      "sourceField": "uso",
+      "originalCode": "SVP",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "PARK",
+      "evidence": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2021-90283"
+    },
+    {
+      "mappingId": "46250-231-uso-T",
+      "sourceField": "uso",
+      "originalCode": "T",
+      "conditions": {},
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/629631/10.%2BNormas%2BUrban%EF%BF%BDsticas.%2B%28Transcripci%EF%BF%BDn%29.pdf/ba78c368-ab86-c719-b9c4-e504111b3863"
+    },
+    {
+      "mappingId": "46250-231-uso-TE-origen_PE2020",
+      "sourceField": "uso",
+      "originalCode": "TE",
+      "conditions": {
+        "origen": "PE2020"
+      },
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "OTHER",
+      "evidence": "https://mhv.valencia.es/ayuntamiento/urbanismo2.nsf/0/FC6389A1526B56D6C1258B66002FEEF3/%24FILE/EF.N%203.%20PLANOS%20ORDENACION%20O-10..pdf?OpenElement="
+    },
+    {
+      "mappingId": "46250-231-uso-TER",
+      "sourceField": "uso",
+      "originalCode": "TER",
+      "conditions": {},
+      "normalizedUse": "TERTIARY",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-UFA",
+      "sourceField": "uso",
+      "originalCode": "UFA",
+      "conditions": {},
+      "normalizedUse": "RESIDENTIAL",
+      "normalizedSubtype": "SINGLE_FAMILY",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035"
+    },
+    {
+      "mappingId": "46250-231-uso-ZV",
+      "sourceField": "uso",
+      "originalCode": "ZV",
+      "conditions": {},
+      "normalizedUse": "GREEN_SPACE",
+      "normalizedSubtype": "UNSPECIFIED",
+      "evidence": "https://www.valencia.es/documents/20142/264010/A_00001_20230427_0945_0_firmadoweb.pdf/b4bd161b-695b-2716-080c-652ab59a4fa0?t=1686818032040"
+    }
+  ],
+  "pendingRules": [
+    {
+      "sourceField": "califi",
+      "originalCode": "PI",
+      "conditions": {
+        "origen": "PGOU",
+        "clase": "SNU",
+        "uso": ""
+      },
+      "reason": "PI_HAS_MULTIPLE_SUBZONES",
+      "evidence": "https://www.valencia.es/documents/20142/4271204/_Normas%2BUrbanisticas%2BPGOU%2Bcon%2BINDICE.pdf/50679b78-5d70-1a19-c34b-6019b16ac71b?t=1663233568035#search=Art%C3%ADculo%204.12"
+    },
+    {
+      "sourceField": "califi",
+      "originalCode": "AR",
+      "conditions": {
+        "origen": "PE1629",
+        "uso": ""
+      },
+      "reason": "PE1629_DOMINANT_USE_REQUIRES_REVIEW"
+    }
+  ]
+}
