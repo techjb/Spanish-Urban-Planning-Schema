@@ -29,7 +29,6 @@ The [parameter catalogue](vocabularies/parameters.json) defines **178 identifier
 ```bash
 pip install -r requirements-dev.txt
 python tests/validate.py
-python tests/validate_municipalities.py
 python tests/validate_filters.py
 python tests/validate_vocabularies.py
 ```

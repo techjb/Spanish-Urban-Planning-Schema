@@ -1,5 +1,0 @@
-{
-  "source_url": "https://sigma.madrid.es/hosted/rest/services/DESARROLLO_URBANO_ACTUALIZADO/USOS_SUELO/MapServer/3/query?where=1%3D1&outFields=UBOV_ID%2CZURV_TX_NOMBRE%2CUSP_TX_DENOM%2CAMB_TX_ETIQ%2CAMB_TX_DENOM%2CUBOV_TX_ETIQ&returnGeometry=true&outSR=4326&resultRecordCount=20&orderByFields=UBOV_ID&f=geojson",
-  "count": 20,
-  "note": "Source geometries and municipal attributes are in source.geojson; legal parcel parameters remain unresolved."
-}

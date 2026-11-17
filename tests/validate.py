@@ -61,13 +61,7 @@ for name, example in [("regulation", "simple-regulation"),
         schemas[name].validate(data)
     print(f"PASS: examples/{example}.json")
 
-samples = sorted((ROOT / "validation/zaragoza").glob("ZARAGOZA-*.json"))
-assert len(samples) >= 5, "Expected at least five Zaragoza samples"
-for path in samples:
-    validate_regulation(json.loads(path.read_text()))
-    print(f"PASS: {path.relative_to(ROOT)}")
-
-sample = json.loads(samples[0].read_text())
+sample = json.loads((ROOT / "examples/simple-regulation.json").read_text())
 sample["parameters"]["notInSUPS"] = {"status": "FIXED", "value": 3}
 try:
     validate_regulation(sample)

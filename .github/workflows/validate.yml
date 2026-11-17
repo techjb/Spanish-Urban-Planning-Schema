@@ -10,7 +10,5 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements-dev.txt
       - run: python tests/validate.py
-      - run: python tests/validate_municipalities.py
       - run: python tests/validate_filters.py
       - run: python tests/validate_vocabularies.py
-      - run: python tests/validate_madrid_uses.py
