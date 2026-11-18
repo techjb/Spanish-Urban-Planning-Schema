@@ -9,7 +9,10 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0",
+      "enum": [
+        "1.0",
+        "1.1"
+      ],
       "description": "Versión del esquema SUPS utilizada para interpretar este objeto."
     },
     "documentId": {
@@ -39,5 +42,305 @@
       "description": "URL pública de consulta del documento de planeamiento."
     }
   },
-  "description": "Metadatos de un instrumento de planeamiento que sirve como fuente de regulación."
+  "description": "Metadatos de un instrumento de planeamiento que sirve como fuente de regulación.",
+  "if": {
+    "properties": {
+      "schemaVersion": {
+        "const": "1.1"
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "publicationDate": {
+        "type": "string",
+        "format": "date",
+        "description": "Fecha de publicación oficial."
+      },
+      "effectiveTo": {
+        "type": "string",
+        "format": "date",
+        "description": "Primer día en que el instrumento deja de estar vigente."
+      },
+      "instrumentRelations": {
+        "type": "array",
+        "description": "Relaciones desde este instrumento hacia los instrumentos afectados.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "relationId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "enum": [
+                "MODIFIES",
+                "REPLACES",
+                "DEVELOPS",
+                "SUSPENDS"
+              ]
+            },
+            "targetDocumentId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sourceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "scope": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "const": "ENTIRE_TARGET"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "const": "UNKNOWN"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "const": "ZONING_AREAS"
+                    },
+                    "areaIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "areaIds"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "const": "GEOMETRY"
+                    },
+                    "geometry": {
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "coordinates"
+                      ],
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "Polygon",
+                            "MultiPolygon"
+                          ],
+                          "description": "Tipo geométrico GeoJSON: Polygon o MultiPolygon."
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "description": "Coordenadas GeoJSON del polígono; respetar el orden y sistema de referencia definido por GeoJSON."
+                        }
+                      },
+                      "description": "Geometría poligonal GeoJSON que delimita el ámbito de zonificación."
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "geometry"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "format": "date"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "format": "date"
+            },
+            "effectiveEndStatus": {
+              "enum": [
+                "DATED",
+                "NO_END_DATE",
+                "UNKNOWN"
+              ]
+            },
+            "normativeScope": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "ENTIRE_TARGET"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "UNKNOWN"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "determinations"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "SPECIFIC_DETERMINATIONS"
+                    },
+                    "determinations": {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "regulationId": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "article": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "section": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "parameterId": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "anyOf": [
+                          {
+                            "required": [
+                              "regulationId"
+                            ]
+                          },
+                          {
+                            "required": [
+                              "article"
+                            ]
+                          }
+                        ],
+                        "dependentRequired": {
+                          "section": [
+                            "article"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "required": [
+            "relationId",
+            "type",
+            "targetDocumentId",
+            "sourceIds",
+            "scope",
+            "effectiveEndStatus",
+            "normativeScope"
+          ],
+          "additionalProperties": false,
+          "if": {
+            "required": [
+              "effectiveEndStatus"
+            ],
+            "properties": {
+              "effectiveEndStatus": {
+                "const": "DATED"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "effectiveTo"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "effectiveTo"
+              ]
+            }
+          }
+        }
+      },
+      "effectiveEndStatus": {
+        "enum": [
+          "DATED",
+          "NO_END_DATE",
+          "UNKNOWN"
+        ]
+      }
+    },
+    "if": {
+      "required": [
+        "effectiveEndStatus"
+      ],
+      "properties": {
+        "effectiveEndStatus": {
+          "const": "DATED"
+        }
+      }
+    },
+    "then": {
+      "required": [
+        "effectiveTo"
+      ]
+    },
+    "else": {
+      "not": {
+        "required": [
+          "effectiveTo"
+        ]
+      }
+    }
+  }
 }

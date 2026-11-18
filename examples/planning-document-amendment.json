@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "documentId": "fictional-amendment",
+  "name": "Modificación puntual ficticia de altura máxima",
+  "publicationDate": "2026-01-10",
+  "effectiveFrom": "2026-01-25",
+  "instrumentRelations": [
+    {
+      "relationId": "fictional-height-change",
+      "type": "MODIFIES",
+      "targetDocumentId": "fictional-general-plan",
+      "sourceIds": [
+        "fictional-amendment-article-2"
+      ],
+      "scope": {
+        "type": "ZONING_AREAS",
+        "areaIds": [
+          "fictional-block-a",
+          "fictional-block-b"
+        ]
+      },
+      "effectiveFrom": "2026-02-01",
+      "effectiveEndStatus": "NO_END_DATE",
+      "normativeScope": {
+        "type": "SPECIFIC_DETERMINATIONS",
+        "determinations": [
+          {
+            "regulationId": "fictional-residential-regulation",
+            "article": "12",
+            "section": "2",
+            "parameterId": "maxHeightM"
+          }
+        ]
+      }
+    }
+  ],
+  "effectiveEndStatus": "UNKNOWN"
+}
