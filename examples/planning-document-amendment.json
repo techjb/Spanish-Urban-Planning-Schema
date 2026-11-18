@@ -20,12 +20,19 @@
         ]
       },
       "effectiveFrom": "2026-02-01",
-      "affectedRegulationIds": [
-        "fictional-residential-regulation"
-      ],
-      "affectedProvisions": [
-        "Artículo 12.2 — altura máxima"
-      ]
+      "effectiveEndStatus": "NO_END_DATE",
+      "normativeScope": {
+        "type": "SPECIFIC_DETERMINATIONS",
+        "determinations": [
+          {
+            "regulationId": "fictional-residential-regulation",
+            "article": "12",
+            "section": "2",
+            "parameterId": "maxHeightM"
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "effectiveEndStatus": "UNKNOWN"
 }
