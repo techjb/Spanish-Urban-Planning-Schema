@@ -1,6 +1,6 @@
 # SUPS — Spanish Urban Planning Schema
 
-**SUPS 1.0 (draft)** is an open, technology-independent data model for Spanish municipal planning regulations and resolved parcel-level development parameters.
+**SUPS 1.1 (draft)** is an open, technology-independent data model for Spanish municipal planning regulations and resolved parcel-level development parameters.
 
 > Community proposal, **not** an official government standard. All examples are fictitious. Planning determinations require verification against legally applicable documents.
 
@@ -9,7 +9,7 @@
 - **Regulation**: normalized municipal ordinance parameters, including fixed values and non-executable natural-language conditions.
 - **Cadastral Plot**: cadastral reference, source, urban/rustic/mixed cadastral nature, official built area, and explicitly distinguished measured versus official land area.
 - **Urban Planning Plot**: planning-source plot and effective or unresolved urbanistic parameters, including per-parameter evidence, allowed/conditional/prohibited uses, and normalized land classification. These entities are not necessarily equivalent.
-- **Planning Document**: source planning instrument.
+- **Planning Document**: source planning instrument, legal dates and optional [instrument relationships](docs/instrument-relations.md).
 - **Zoning Area**: geographic applicability, including zoning and land-classification polygons (GeoJSON-like geometry).
 - **Regulation Source**: article/page provenance.
 
@@ -31,6 +31,7 @@ pip install -r requirements-dev.txt
 python tests/validate.py
 python tests/validate_filters.py
 python tests/validate_vocabularies.py
+python tests/validate_instrument_relations.py
 ```
 
 ## Principles
